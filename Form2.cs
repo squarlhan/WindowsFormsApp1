@@ -41,5 +41,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void ucListView1_SelectedItemEvent(object sender, EventArgs e)
+        {
+
+        }
     }
 }

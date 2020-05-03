@@ -30,8 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabControlExt1 = new HZH_Controls.Controls.TabControlExt();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panelEx2 = new WindowsFormsApp1.PanelEx(this.components);
+            this.ucBtnExt7 = new HZH_Controls.Controls.UCBtnExt();
+            this.ucBtnExt8 = new HZH_Controls.Controls.UCBtnExt();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.ucTextBoxEx5 = new HZH_Controls.Controls.UCTextBoxEx();
+            this.label5 = new System.Windows.Forms.Label();
+            this.ucTextBoxEx6 = new HZH_Controls.Controls.UCTextBoxEx();
+            this.label6 = new System.Windows.Forms.Label();
             this.panelEx1 = new WindowsFormsApp1.PanelEx(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.ucTextBoxEx4 = new HZH_Controls.Controls.UCTextBoxEx();
@@ -44,14 +50,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ucTextBoxEx58 = new HZH_Controls.Controls.UCTextBoxEx();
             this.label41 = new System.Windows.Forms.Label();
-            this.panelEx2 = new WindowsFormsApp1.PanelEx(this.components);
-            this.ucBtnExt7 = new HZH_Controls.Controls.UCBtnExt();
-            this.ucBtnExt8 = new HZH_Controls.Controls.UCBtnExt();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.ucTextBoxEx5 = new HZH_Controls.Controls.UCTextBoxEx();
-            this.label5 = new System.Windows.Forms.Label();
-            this.ucTextBoxEx6 = new HZH_Controls.Controls.UCTextBoxEx();
-            this.label6 = new System.Windows.Forms.Label();
+            this.tabControlExt1 = new HZH_Controls.Controls.TabControlExt();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panelEx3 = new WindowsFormsApp1.PanelEx(this.components);
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -65,12 +65,12 @@
             this.ucTextBoxEx7 = new HZH_Controls.Controls.UCTextBoxEx();
             this.label7 = new System.Windows.Forms.Label();
             this.tabPage1.SuspendLayout();
-            this.tabControlExt1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.panelEx1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.panelEx2.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.panelEx1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.tabControlExt1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.panelEx3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,334 +89,6 @@
             this.tabPage1.Text = "常规警报设置   ";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // tabControlExt1
-            // 
-            this.tabControlExt1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.tabControlExt1.BorderColor = System.Drawing.Color.White;
-            this.tabControlExt1.Controls.Add(this.tabPage1);
-            this.tabControlExt1.Controls.Add(this.tabPage2);
-            this.tabControlExt1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tabControlExt1.HeaderBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.tabControlExt1.HeadSelectedBorderColor = System.Drawing.Color.WhiteSmoke;
-            this.tabControlExt1.IsShowCloseBtn = false;
-            this.tabControlExt1.ItemSize = new System.Drawing.Size(0, 50);
-            this.tabControlExt1.Location = new System.Drawing.Point(-1, 2);
-            this.tabControlExt1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabControlExt1.Name = "tabControlExt1";
-            this.tabControlExt1.Padding = new System.Drawing.Point(16, 3);
-            this.tabControlExt1.SelectedIndex = 0;
-            this.tabControlExt1.Size = new System.Drawing.Size(1213, 731);
-            this.tabControlExt1.TabIndex = 0;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.panelEx3);
-            this.tabPage2.Font = new System.Drawing.Font("宋体", 2F);
-            this.tabPage2.Location = new System.Drawing.Point(4, 54);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 0, 2);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 0, 2);
-            this.tabPage2.Size = new System.Drawing.Size(1205, 673);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "智能警报设置  ";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
-            // 
-            // panelEx1
-            // 
-            this.panelEx1.BorderColor = System.Drawing.Color.Black;
-            this.panelEx1.BorderSize = 1;
-            this.panelEx1.Controls.Add(this.groupBox1);
-            this.panelEx1.Location = new System.Drawing.Point(-4, 0);
-            this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(1072, 341);
-            this.panelEx1.TabIndex = 18;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.groupBox1.Controls.Add(this.ucTextBoxEx4);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.ucTextBoxEx2);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.ucTextBoxEx3);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.ucTextBoxEx1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.ucTextBoxEx58);
-            this.groupBox1.Controls.Add(this.label41);
-            this.groupBox1.Font = new System.Drawing.Font("微软雅黑", 15F);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(7, 34);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(1051, 264);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "阈值类";
-            // 
-            // ucTextBoxEx4
-            // 
-            this.ucTextBoxEx4.BackColor = System.Drawing.Color.Transparent;
-            this.ucTextBoxEx4.ConerRadius = 5;
-            this.ucTextBoxEx4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ucTextBoxEx4.DecLength = 2;
-            this.ucTextBoxEx4.FillColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ucTextBoxEx4.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
-            this.ucTextBoxEx4.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucTextBoxEx4.InputText = "";
-            this.ucTextBoxEx4.InputType = HZH_Controls.TextInputType.NotControl;
-            this.ucTextBoxEx4.IsFocusColor = true;
-            this.ucTextBoxEx4.IsRadius = true;
-            this.ucTextBoxEx4.IsShowClearBtn = true;
-            this.ucTextBoxEx4.IsShowKeyboard = false;
-            this.ucTextBoxEx4.IsShowRect = true;
-            this.ucTextBoxEx4.IsShowSearchBtn = false;
-            this.ucTextBoxEx4.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderAll_EN;
-            this.ucTextBoxEx4.Location = new System.Drawing.Point(156, 186);
-            this.ucTextBoxEx4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ucTextBoxEx4.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.ucTextBoxEx4.MinValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.ucTextBoxEx4.Name = "ucTextBoxEx4";
-            this.ucTextBoxEx4.Padding = new System.Windows.Forms.Padding(5);
-            this.ucTextBoxEx4.PromptColor = System.Drawing.Color.Gray;
-            this.ucTextBoxEx4.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucTextBoxEx4.PromptText = "";
-            this.ucTextBoxEx4.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.ucTextBoxEx4.RectWidth = 1;
-            this.ucTextBoxEx4.RegexPattern = "";
-            this.ucTextBoxEx4.Size = new System.Drawing.Size(151, 42);
-            this.ucTextBoxEx4.TabIndex = 20;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(5, 186);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 27);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "立管压力";
-            // 
-            // ucTextBoxEx2
-            // 
-            this.ucTextBoxEx2.BackColor = System.Drawing.Color.Transparent;
-            this.ucTextBoxEx2.ConerRadius = 5;
-            this.ucTextBoxEx2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ucTextBoxEx2.DecLength = 2;
-            this.ucTextBoxEx2.FillColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ucTextBoxEx2.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
-            this.ucTextBoxEx2.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucTextBoxEx2.InputText = "";
-            this.ucTextBoxEx2.InputType = HZH_Controls.TextInputType.NotControl;
-            this.ucTextBoxEx2.IsFocusColor = true;
-            this.ucTextBoxEx2.IsRadius = true;
-            this.ucTextBoxEx2.IsShowClearBtn = true;
-            this.ucTextBoxEx2.IsShowKeyboard = false;
-            this.ucTextBoxEx2.IsShowRect = true;
-            this.ucTextBoxEx2.IsShowSearchBtn = false;
-            this.ucTextBoxEx2.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderAll_EN;
-            this.ucTextBoxEx2.Location = new System.Drawing.Point(648, 124);
-            this.ucTextBoxEx2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ucTextBoxEx2.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.ucTextBoxEx2.MinValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.ucTextBoxEx2.Name = "ucTextBoxEx2";
-            this.ucTextBoxEx2.Padding = new System.Windows.Forms.Padding(5);
-            this.ucTextBoxEx2.PromptColor = System.Drawing.Color.Gray;
-            this.ucTextBoxEx2.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucTextBoxEx2.PromptText = "";
-            this.ucTextBoxEx2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.ucTextBoxEx2.RectWidth = 1;
-            this.ucTextBoxEx2.RegexPattern = "";
-            this.ucTextBoxEx2.Size = new System.Drawing.Size(151, 42);
-            this.ucTextBoxEx2.TabIndex = 18;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(416, 124);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(152, 27);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "井口压力变化率";
-            // 
-            // ucTextBoxEx3
-            // 
-            this.ucTextBoxEx3.BackColor = System.Drawing.Color.Transparent;
-            this.ucTextBoxEx3.ConerRadius = 5;
-            this.ucTextBoxEx3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ucTextBoxEx3.DecLength = 2;
-            this.ucTextBoxEx3.FillColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ucTextBoxEx3.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
-            this.ucTextBoxEx3.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucTextBoxEx3.InputText = "";
-            this.ucTextBoxEx3.InputType = HZH_Controls.TextInputType.NotControl;
-            this.ucTextBoxEx3.IsFocusColor = true;
-            this.ucTextBoxEx3.IsRadius = true;
-            this.ucTextBoxEx3.IsShowClearBtn = true;
-            this.ucTextBoxEx3.IsShowKeyboard = false;
-            this.ucTextBoxEx3.IsShowRect = true;
-            this.ucTextBoxEx3.IsShowSearchBtn = false;
-            this.ucTextBoxEx3.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderAll_EN;
-            this.ucTextBoxEx3.Location = new System.Drawing.Point(156, 124);
-            this.ucTextBoxEx3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ucTextBoxEx3.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.ucTextBoxEx3.MinValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.ucTextBoxEx3.Name = "ucTextBoxEx3";
-            this.ucTextBoxEx3.Padding = new System.Windows.Forms.Padding(5);
-            this.ucTextBoxEx3.PromptColor = System.Drawing.Color.Gray;
-            this.ucTextBoxEx3.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucTextBoxEx3.PromptText = "";
-            this.ucTextBoxEx3.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.ucTextBoxEx3.RectWidth = 1;
-            this.ucTextBoxEx3.RegexPattern = "";
-            this.ucTextBoxEx3.Size = new System.Drawing.Size(151, 42);
-            this.ucTextBoxEx3.TabIndex = 16;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(5, 124);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 27);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "井口压力";
-            // 
-            // ucTextBoxEx1
-            // 
-            this.ucTextBoxEx1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ucTextBoxEx1.ConerRadius = 5;
-            this.ucTextBoxEx1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ucTextBoxEx1.DecLength = 2;
-            this.ucTextBoxEx1.FillColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ucTextBoxEx1.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
-            this.ucTextBoxEx1.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucTextBoxEx1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ucTextBoxEx1.InputText = "";
-            this.ucTextBoxEx1.InputType = HZH_Controls.TextInputType.NotControl;
-            this.ucTextBoxEx1.IsFocusColor = true;
-            this.ucTextBoxEx1.IsRadius = true;
-            this.ucTextBoxEx1.IsShowClearBtn = true;
-            this.ucTextBoxEx1.IsShowKeyboard = false;
-            this.ucTextBoxEx1.IsShowRect = true;
-            this.ucTextBoxEx1.IsShowSearchBtn = false;
-            this.ucTextBoxEx1.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderAll_EN;
-            this.ucTextBoxEx1.Location = new System.Drawing.Point(648, 61);
-            this.ucTextBoxEx1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ucTextBoxEx1.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.ucTextBoxEx1.MinValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.ucTextBoxEx1.Name = "ucTextBoxEx1";
-            this.ucTextBoxEx1.Padding = new System.Windows.Forms.Padding(5);
-            this.ucTextBoxEx1.PromptColor = System.Drawing.Color.Gray;
-            this.ucTextBoxEx1.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucTextBoxEx1.PromptText = "";
-            this.ucTextBoxEx1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.ucTextBoxEx1.RectWidth = 1;
-            this.ucTextBoxEx1.RegexPattern = "";
-            this.ucTextBoxEx1.Size = new System.Drawing.Size(151, 42);
-            this.ucTextBoxEx1.TabIndex = 14;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(416, 61);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 27);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "出入口流量差积分";
-            // 
-            // ucTextBoxEx58
-            // 
-            this.ucTextBoxEx58.BackColor = System.Drawing.Color.Transparent;
-            this.ucTextBoxEx58.ConerRadius = 5;
-            this.ucTextBoxEx58.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ucTextBoxEx58.DecLength = 2;
-            this.ucTextBoxEx58.FillColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ucTextBoxEx58.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
-            this.ucTextBoxEx58.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucTextBoxEx58.InputText = "";
-            this.ucTextBoxEx58.InputType = HZH_Controls.TextInputType.NotControl;
-            this.ucTextBoxEx58.IsFocusColor = true;
-            this.ucTextBoxEx58.IsRadius = true;
-            this.ucTextBoxEx58.IsShowClearBtn = true;
-            this.ucTextBoxEx58.IsShowKeyboard = false;
-            this.ucTextBoxEx58.IsShowRect = true;
-            this.ucTextBoxEx58.IsShowSearchBtn = false;
-            this.ucTextBoxEx58.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderAll_EN;
-            this.ucTextBoxEx58.Location = new System.Drawing.Point(156, 61);
-            this.ucTextBoxEx58.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ucTextBoxEx58.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.ucTextBoxEx58.MinValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.ucTextBoxEx58.Name = "ucTextBoxEx58";
-            this.ucTextBoxEx58.Padding = new System.Windows.Forms.Padding(5);
-            this.ucTextBoxEx58.PromptColor = System.Drawing.Color.Gray;
-            this.ucTextBoxEx58.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucTextBoxEx58.PromptText = "";
-            this.ucTextBoxEx58.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.ucTextBoxEx58.RectWidth = 1;
-            this.ucTextBoxEx58.RegexPattern = "";
-            this.ucTextBoxEx58.Size = new System.Drawing.Size(151, 42);
-            this.ucTextBoxEx58.TabIndex = 12;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.label41.ForeColor = System.Drawing.Color.White;
-            this.label41.Location = new System.Drawing.Point(5, 61);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(92, 27);
-            this.label41.TabIndex = 6;
-            this.label41.Text = "连接设备";
             // 
             // panelEx2
             // 
@@ -602,6 +274,334 @@
             this.label6.Size = new System.Drawing.Size(163, 23);
             this.label6.TabIndex = 15;
             this.label6.Text = "出入口流量差变化率";
+            // 
+            // panelEx1
+            // 
+            this.panelEx1.BorderColor = System.Drawing.Color.Black;
+            this.panelEx1.BorderSize = 1;
+            this.panelEx1.Controls.Add(this.groupBox1);
+            this.panelEx1.Location = new System.Drawing.Point(-4, 0);
+            this.panelEx1.Name = "panelEx1";
+            this.panelEx1.Size = new System.Drawing.Size(1072, 341);
+            this.panelEx1.TabIndex = 18;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.groupBox1.Controls.Add(this.ucTextBoxEx4);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.ucTextBoxEx2);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.ucTextBoxEx3);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.ucTextBoxEx1);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.ucTextBoxEx58);
+            this.groupBox1.Controls.Add(this.label41);
+            this.groupBox1.Font = new System.Drawing.Font("微软雅黑", 15F);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(7, 34);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(1051, 264);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "阈值类";
+            // 
+            // ucTextBoxEx4
+            // 
+            this.ucTextBoxEx4.BackColor = System.Drawing.Color.Transparent;
+            this.ucTextBoxEx4.ConerRadius = 5;
+            this.ucTextBoxEx4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ucTextBoxEx4.DecLength = 2;
+            this.ucTextBoxEx4.FillColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ucTextBoxEx4.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
+            this.ucTextBoxEx4.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucTextBoxEx4.InputText = "";
+            this.ucTextBoxEx4.InputType = HZH_Controls.TextInputType.NotControl;
+            this.ucTextBoxEx4.IsFocusColor = true;
+            this.ucTextBoxEx4.IsRadius = true;
+            this.ucTextBoxEx4.IsShowClearBtn = true;
+            this.ucTextBoxEx4.IsShowKeyboard = false;
+            this.ucTextBoxEx4.IsShowRect = true;
+            this.ucTextBoxEx4.IsShowSearchBtn = false;
+            this.ucTextBoxEx4.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderAll_EN;
+            this.ucTextBoxEx4.Location = new System.Drawing.Point(209, 186);
+            this.ucTextBoxEx4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucTextBoxEx4.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.ucTextBoxEx4.MinValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.ucTextBoxEx4.Name = "ucTextBoxEx4";
+            this.ucTextBoxEx4.Padding = new System.Windows.Forms.Padding(5);
+            this.ucTextBoxEx4.PromptColor = System.Drawing.Color.Gray;
+            this.ucTextBoxEx4.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucTextBoxEx4.PromptText = "";
+            this.ucTextBoxEx4.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.ucTextBoxEx4.RectWidth = 1;
+            this.ucTextBoxEx4.RegexPattern = "";
+            this.ucTextBoxEx4.Size = new System.Drawing.Size(151, 42);
+            this.ucTextBoxEx4.TabIndex = 20;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(5, 186);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(149, 27);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "立管压力(MPa)";
+            // 
+            // ucTextBoxEx2
+            // 
+            this.ucTextBoxEx2.BackColor = System.Drawing.Color.Transparent;
+            this.ucTextBoxEx2.ConerRadius = 5;
+            this.ucTextBoxEx2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ucTextBoxEx2.DecLength = 2;
+            this.ucTextBoxEx2.FillColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ucTextBoxEx2.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
+            this.ucTextBoxEx2.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucTextBoxEx2.InputText = "";
+            this.ucTextBoxEx2.InputType = HZH_Controls.TextInputType.NotControl;
+            this.ucTextBoxEx2.IsFocusColor = true;
+            this.ucTextBoxEx2.IsRadius = true;
+            this.ucTextBoxEx2.IsShowClearBtn = true;
+            this.ucTextBoxEx2.IsShowKeyboard = false;
+            this.ucTextBoxEx2.IsShowRect = true;
+            this.ucTextBoxEx2.IsShowSearchBtn = false;
+            this.ucTextBoxEx2.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderAll_EN;
+            this.ucTextBoxEx2.Location = new System.Drawing.Point(648, 124);
+            this.ucTextBoxEx2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucTextBoxEx2.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.ucTextBoxEx2.MinValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.ucTextBoxEx2.Name = "ucTextBoxEx2";
+            this.ucTextBoxEx2.Padding = new System.Windows.Forms.Padding(5);
+            this.ucTextBoxEx2.PromptColor = System.Drawing.Color.Gray;
+            this.ucTextBoxEx2.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucTextBoxEx2.PromptText = "";
+            this.ucTextBoxEx2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.ucTextBoxEx2.RectWidth = 1;
+            this.ucTextBoxEx2.RegexPattern = "";
+            this.ucTextBoxEx2.Size = new System.Drawing.Size(151, 42);
+            this.ucTextBoxEx2.TabIndex = 18;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(416, 124);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(152, 27);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "井口压力变化率";
+            // 
+            // ucTextBoxEx3
+            // 
+            this.ucTextBoxEx3.BackColor = System.Drawing.Color.Transparent;
+            this.ucTextBoxEx3.ConerRadius = 5;
+            this.ucTextBoxEx3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ucTextBoxEx3.DecLength = 2;
+            this.ucTextBoxEx3.FillColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ucTextBoxEx3.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
+            this.ucTextBoxEx3.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucTextBoxEx3.InputText = "";
+            this.ucTextBoxEx3.InputType = HZH_Controls.TextInputType.NotControl;
+            this.ucTextBoxEx3.IsFocusColor = true;
+            this.ucTextBoxEx3.IsRadius = true;
+            this.ucTextBoxEx3.IsShowClearBtn = true;
+            this.ucTextBoxEx3.IsShowKeyboard = false;
+            this.ucTextBoxEx3.IsShowRect = true;
+            this.ucTextBoxEx3.IsShowSearchBtn = false;
+            this.ucTextBoxEx3.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderAll_EN;
+            this.ucTextBoxEx3.Location = new System.Drawing.Point(209, 124);
+            this.ucTextBoxEx3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucTextBoxEx3.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.ucTextBoxEx3.MinValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.ucTextBoxEx3.Name = "ucTextBoxEx3";
+            this.ucTextBoxEx3.Padding = new System.Windows.Forms.Padding(5);
+            this.ucTextBoxEx3.PromptColor = System.Drawing.Color.Gray;
+            this.ucTextBoxEx3.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucTextBoxEx3.PromptText = "";
+            this.ucTextBoxEx3.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.ucTextBoxEx3.RectWidth = 1;
+            this.ucTextBoxEx3.RegexPattern = "";
+            this.ucTextBoxEx3.Size = new System.Drawing.Size(151, 42);
+            this.ucTextBoxEx3.TabIndex = 16;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(5, 124);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(149, 27);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "井口压力(MPa)";
+            // 
+            // ucTextBoxEx1
+            // 
+            this.ucTextBoxEx1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ucTextBoxEx1.ConerRadius = 5;
+            this.ucTextBoxEx1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ucTextBoxEx1.DecLength = 2;
+            this.ucTextBoxEx1.FillColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ucTextBoxEx1.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
+            this.ucTextBoxEx1.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucTextBoxEx1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ucTextBoxEx1.InputText = "";
+            this.ucTextBoxEx1.InputType = HZH_Controls.TextInputType.NotControl;
+            this.ucTextBoxEx1.IsFocusColor = true;
+            this.ucTextBoxEx1.IsRadius = true;
+            this.ucTextBoxEx1.IsShowClearBtn = true;
+            this.ucTextBoxEx1.IsShowKeyboard = false;
+            this.ucTextBoxEx1.IsShowRect = true;
+            this.ucTextBoxEx1.IsShowSearchBtn = false;
+            this.ucTextBoxEx1.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderAll_EN;
+            this.ucTextBoxEx1.Location = new System.Drawing.Point(648, 61);
+            this.ucTextBoxEx1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucTextBoxEx1.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.ucTextBoxEx1.MinValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.ucTextBoxEx1.Name = "ucTextBoxEx1";
+            this.ucTextBoxEx1.Padding = new System.Windows.Forms.Padding(5);
+            this.ucTextBoxEx1.PromptColor = System.Drawing.Color.Gray;
+            this.ucTextBoxEx1.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucTextBoxEx1.PromptText = "";
+            this.ucTextBoxEx1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.ucTextBoxEx1.RectWidth = 1;
+            this.ucTextBoxEx1.RegexPattern = "";
+            this.ucTextBoxEx1.Size = new System.Drawing.Size(151, 42);
+            this.ucTextBoxEx1.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(416, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(172, 27);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "出入口流量差积分";
+            // 
+            // ucTextBoxEx58
+            // 
+            this.ucTextBoxEx58.BackColor = System.Drawing.Color.Transparent;
+            this.ucTextBoxEx58.ConerRadius = 5;
+            this.ucTextBoxEx58.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ucTextBoxEx58.DecLength = 2;
+            this.ucTextBoxEx58.FillColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ucTextBoxEx58.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
+            this.ucTextBoxEx58.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucTextBoxEx58.InputText = "";
+            this.ucTextBoxEx58.InputType = HZH_Controls.TextInputType.NotControl;
+            this.ucTextBoxEx58.IsFocusColor = true;
+            this.ucTextBoxEx58.IsRadius = true;
+            this.ucTextBoxEx58.IsShowClearBtn = true;
+            this.ucTextBoxEx58.IsShowKeyboard = false;
+            this.ucTextBoxEx58.IsShowRect = true;
+            this.ucTextBoxEx58.IsShowSearchBtn = false;
+            this.ucTextBoxEx58.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderAll_EN;
+            this.ucTextBoxEx58.Location = new System.Drawing.Point(209, 61);
+            this.ucTextBoxEx58.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucTextBoxEx58.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.ucTextBoxEx58.MinValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.ucTextBoxEx58.Name = "ucTextBoxEx58";
+            this.ucTextBoxEx58.Padding = new System.Windows.Forms.Padding(5);
+            this.ucTextBoxEx58.PromptColor = System.Drawing.Color.Gray;
+            this.ucTextBoxEx58.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucTextBoxEx58.PromptText = "";
+            this.ucTextBoxEx58.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.ucTextBoxEx58.RectWidth = 1;
+            this.ucTextBoxEx58.RegexPattern = "";
+            this.ucTextBoxEx58.Size = new System.Drawing.Size(151, 42);
+            this.ucTextBoxEx58.TabIndex = 12;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.label41.ForeColor = System.Drawing.Color.White;
+            this.label41.Location = new System.Drawing.Point(5, 61);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(174, 27);
+            this.label41.TabIndex = 6;
+            this.label41.Text = "出入口流量差(L/s)";
+            // 
+            // tabControlExt1
+            // 
+            this.tabControlExt1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tabControlExt1.BorderColor = System.Drawing.Color.White;
+            this.tabControlExt1.Controls.Add(this.tabPage1);
+            this.tabControlExt1.Controls.Add(this.tabPage2);
+            this.tabControlExt1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tabControlExt1.HeaderBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tabControlExt1.HeadSelectedBorderColor = System.Drawing.Color.WhiteSmoke;
+            this.tabControlExt1.IsShowCloseBtn = false;
+            this.tabControlExt1.ItemSize = new System.Drawing.Size(0, 50);
+            this.tabControlExt1.Location = new System.Drawing.Point(-1, 2);
+            this.tabControlExt1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabControlExt1.Name = "tabControlExt1";
+            this.tabControlExt1.Padding = new System.Drawing.Point(16, 3);
+            this.tabControlExt1.SelectedIndex = 0;
+            this.tabControlExt1.Size = new System.Drawing.Size(1213, 731);
+            this.tabControlExt1.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.panelEx3);
+            this.tabPage2.Font = new System.Drawing.Font("宋体", 2F);
+            this.tabPage2.Location = new System.Drawing.Point(4, 54);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 0, 2);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 0, 2);
+            this.tabPage2.Size = new System.Drawing.Size(1205, 673);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "智能警报设置  ";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // panelEx3
             // 
@@ -919,17 +919,18 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form2";
             this.Text = "警报设置";
+            this.TopMost = true;
             this.TransparencyKey = System.Drawing.SystemColors.Control;
             this.Load += new System.EventHandler(this.Form2_Load);
             this.tabPage1.ResumeLayout(false);
-            this.tabControlExt1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.panelEx1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panelEx2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.panelEx1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.tabControlExt1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.panelEx3.ResumeLayout(false);
             this.panelEx3.PerformLayout();
             this.ResumeLayout(false);

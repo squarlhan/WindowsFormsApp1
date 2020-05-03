@@ -12,8 +12,7 @@ namespace DBTestCs
             //实例化连接对象
             mc = new MySqlConnection();
             mc.ConnectionString = "server = 47.95.144.194; user = root; database = yf15; port = 3306; password = ";
-            //mc.ConnectionString = "server = localhost; user = root; database = yf15; port = 3306; password = mysql";
-
+            // mc.ConnectionString = "server = localhost; user = root; database = yf15; port = 3306; password = 123456";
             mc.Open();
         }
 

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using Sunisoft.IrisSkin;
+//using Sunisoft.IrisSkin;
 
 using MySql.Data;
 using MySql.Data.MySqlClient;
@@ -27,8 +27,8 @@ namespace WindowsFormsApp1
         Double ChuKouLiuLiangLeiJi = 0;//出口流量累积值
         bool flag = true;
         // System.Timers.Timer timer2 = new System.Timers.Timer();
-
-
+        static int JianGe = 0;//如果到10秒，则画一条线
+        const int ConstJianGe = 300;
         private float X, Y;
 
         public Form1()
@@ -50,28 +50,33 @@ namespace WindowsFormsApp1
                      {
                          Title="测量值",
                          Values=new ChartValues<double>{ },
-                         PointGeometry=null
-                        
+                         PointGeometry=null,
+                         FontSize=20,
+
 
                      },
                      new LineSeries
                      {
                          Title = "设定值",
                          Values =new ChartValues<double>{ },
-                         PointGeometry = null
+                         PointGeometry = null,
+                         FontSize=20,
                      }
                  };
             //  List<String> StrList1 = new List<string>();
             this.cartesianChart1.AxisX.Add(new Axis
             {
                 Title = "时间",
-                Labels = StrList.ToArray()
-            });
+                Labels = StrList.ToArray(),
+                FontSize = 15,
+              
+            }) ;
 
             Axis PowerY = new Axis
             {
-                Title = "压力",
+                Title = "压力(MPa)",
                 //LabelFormatter = value => value.ToString("C")
+                FontSize=15,
             };
             this.cartesianChart1.AxisY.Add(PowerY);
             this.cartesianChart1.LegendLocation = LegendLocation.Top;
@@ -103,14 +108,17 @@ namespace WindowsFormsApp1
             this.cartesianChart2.AxisX.Add(new Axis
             {
                 Title = "时间",
-                Labels = StrList.ToArray()
+                Labels = StrList.ToArray(),
+                FontSize=15,
+                
             });
 
             Axis WellDepY = new Axis
             {
-                Title = "流量",
+                Title = "流量(L/s)",
                 // LabelFormatter = value => value.ToString("C")
-                LabelFormatter=value=>value.ToString("F2")
+                LabelFormatter=value=>value.ToString("F2"),
+                FontSize=15,
                 
             };
 
@@ -223,7 +231,8 @@ namespace WindowsFormsApp1
             }
 
             List<String> newList = new List<string>(this.cartesianChart2.AxisX[0].Labels);
-            newList.Add(obj.getDateTime().Substring(9,5));//获取时间,HH:MM
+            String JianGeString = obj.getDateTime().Substring(9, 5);//获取需要放置分割线的时间节点
+            newList.Add(JianGeString);//获取时间,HH:MM
             if (newList.Count >= 1200)
             {
                 newList.RemoveAt(0);
@@ -244,8 +253,22 @@ namespace WindowsFormsApp1
             {
                 this.cartesianChart1.Series[1].Values.RemoveAt(0);
             }
-
-          
+            JianGe++;//代表输入了一条数据
+            //每十条数据添加一条线
+            if (JianGe == ConstJianGe)
+            {
+                JianGe = 0;
+                this.cartesianChart1.AxisX[0].Separator = new Separator
+                {
+                    Step = ConstJianGe,
+                    
+                };
+                this.cartesianChart2.AxisX[0].Separator = new Separator
+                {
+                    Step = ConstJianGe,
+                };
+            }
+            
 
 
             //再写一个计时器，用来更新累计值
@@ -397,7 +420,10 @@ namespace WindowsFormsApp1
 
             float newx = (this.Width) / X;//当前宽度与变化前宽度之比
             float newy = this.Height / Y;//当前高度与变化前宽度之比
-            setControls(newx, newy, this);
+            
+                setControls(newx, newy, this);
+           
+            
             //this.Text = this.Width.ToString() + " " + this.Height.ToString(); //窗体标题显示长度和宽度
 
         }
@@ -447,9 +473,9 @@ namespace WindowsFormsApp1
         private void ucBtnExt6_BtnClick(object sender, EventArgs e)
         {
             int tempLocation2 = this.panelEx2.Location.Y;
-            if (string.Equals(this.ucBtnExt6.BtnText, "隐藏数据"))
+            if (string.Equals(this.ucBtnExt6.BtnText, "隐藏"))
             {
-                this.ucBtnExt6.BtnText = "显示数据";
+                this.ucBtnExt6.BtnText = "显示";
                 this.panelEx5.Visible = false;
                 int newLocation2FangDa = this.panelEx5.Location.Y + this.panelEx5.Size.Height - this.panelEx2.Size.Height;
                 this.panelEx2.Location = new Point(3, newLocation2FangDa);//修改坐标位置
@@ -467,7 +493,7 @@ namespace WindowsFormsApp1
             }
             else
             {
-                this.ucBtnExt6.BtnText = "隐藏数据";
+                this.ucBtnExt6.BtnText = "隐藏";
                 this.panelEx5.Visible = true;
                 int newLocation2HuiFu = this.panelEx5.Location.Y - (this.panelEx2.Size.Height);
                 this.panelEx2.Location = new Point(3, newLocation2HuiFu);
@@ -509,17 +535,23 @@ namespace WindowsFormsApp1
 
         }
 
+        private void Form1_DpiChanged(object sender, DpiChangedEventArgs e)
+        {
+           /// Hello hello = new Hello();
+            //hello.ShowDialog();
+        }
+
         private void ucBtnExt5_BtnClick(object sender, EventArgs e)
         {
             if (string.Equals(this.ucBtnExt5.BtnText, "全屏"))
             {
                 this.FormBorderStyle = FormBorderStyle.None;     //设置窗体为无边框样式
                 this.WindowState = FormWindowState.Maximized;    //最大化窗体 
-                this.ucBtnExt5.BtnText = "恢复原分辨率";
+                this.ucBtnExt5.BtnText = "退出";
                 if (!this.panelEx5.Visible)
                 {
                     this.panelEx5.Visible = true;
-                    ucBtnExt6.BtnText = "隐藏数据";
+                    ucBtnExt6.BtnText = "隐藏";
                 }
 
                 
@@ -532,7 +564,7 @@ namespace WindowsFormsApp1
                 if (!this.panelEx5.Visible)
                 {
                     this.panelEx5.Visible = true;
-                    ucBtnExt6.BtnText = "隐藏数据";
+                    ucBtnExt6.BtnText = "隐藏";
                 }
             }
             
