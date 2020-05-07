@@ -40,6 +40,24 @@ namespace WindowsFormsApp1
             this.ucBtnExt4 = new HZH_Controls.Controls.UCBtnExt();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.ucSignalLamp1 = new HZH_Controls.Controls.UCSignalLamp();
+            this.ucBtnExt2 = new HZH_Controls.Controls.UCBtnExt();
+            this.ucBtnExt1 = new HZH_Controls.Controls.UCBtnExt();
+            this.ucBtnExt6 = new HZH_Controls.Controls.UCBtnExt();
+            this.ucBtnExt5 = new HZH_Controls.Controls.UCBtnExt();
+            this.cartesianChart2 = new LiveCharts.WinForms.CartesianChart();
+            this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
+            this.label28 = new System.Windows.Forms.Label();
+            this.panelEx6 = new WindowsFormsApp1.PanelEx(this.components);
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.ucSwitch2 = new HZH_Controls.Controls.UCSwitch();
+            this.ucCombox2 = new HZH_Controls.Controls.UCCombox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.textBoxEx8 = new HZH_Controls.Controls.TextBoxEx();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.textBoxEx7 = new HZH_Controls.Controls.TextBoxEx();
             this.panelEx5 = new WindowsFormsApp1.PanelEx(this.components);
             this.ucNumTextBox10 = new HZH_Controls.Controls.UCNumTextBox();
             this.ucNumTextBox8 = new HZH_Controls.Controls.UCNumTextBox();
@@ -59,9 +77,6 @@ namespace WindowsFormsApp1
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.ucNumTextBox1 = new HZH_Controls.Controls.UCNumTextBox();
-            this.ucSignalLamp1 = new HZH_Controls.Controls.UCSignalLamp();
-            this.ucBtnExt2 = new HZH_Controls.Controls.UCBtnExt();
-            this.ucBtnExt1 = new HZH_Controls.Controls.UCBtnExt();
             this.panelEx3 = new WindowsFormsApp1.PanelEx(this.components);
             this.ucTrackBar3 = new HZH_Controls.Controls.UCTrackBar();
             this.ucTrackBar2 = new HZH_Controls.Controls.UCTrackBar();
@@ -72,8 +87,19 @@ namespace WindowsFormsApp1
             this.label19 = new System.Windows.Forms.Label();
             this.ucNumTextBox13 = new HZH_Controls.Controls.UCNumTextBox();
             this.ucNumTextBox14 = new HZH_Controls.Controls.UCNumTextBox();
-            this.ucBtnExt6 = new HZH_Controls.Controls.UCBtnExt();
-            this.ucBtnExt5 = new HZH_Controls.Controls.UCBtnExt();
+            this.panelEx2 = new WindowsFormsApp1.PanelEx(this.components);
+            this.ucNumTextBox11 = new HZH_Controls.Controls.UCNumTextBox();
+            this.ucNumTextBox9 = new HZH_Controls.Controls.UCNumTextBox();
+            this.ucTextBoxEx2 = new HZH_Controls.Controls.UCTextBoxEx();
+            this.ucNumTextBox3 = new HZH_Controls.Controls.UCNumTextBox();
+            this.ucTextBoxEx1 = new HZH_Controls.Controls.UCTextBoxEx();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ucNumTextBox7 = new HZH_Controls.Controls.UCNumTextBox();
             this.panelEx1 = new WindowsFormsApp1.PanelEx(this.components);
             this.textBoxEx6 = new HZH_Controls.Controls.TextBoxEx();
             this.textBoxEx5 = new HZH_Controls.Controls.TextBoxEx();
@@ -82,37 +108,11 @@ namespace WindowsFormsApp1
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.ucSwitch1 = new HZH_Controls.Controls.UCSwitch();
-            this.cartesianChart2 = new LiveCharts.WinForms.CartesianChart();
-            this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
-            this.label28 = new System.Windows.Forms.Label();
-            this.panelEx6 = new WindowsFormsApp1.PanelEx(this.components);
-            this.label27 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.ucSwitch2 = new HZH_Controls.Controls.UCSwitch();
-            this.ucCombox2 = new HZH_Controls.Controls.UCCombox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.textBoxEx8 = new HZH_Controls.Controls.TextBoxEx();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.textBoxEx7 = new HZH_Controls.Controls.TextBoxEx();
-            this.panelEx2 = new WindowsFormsApp1.PanelEx(this.components);
-            this.ucNumTextBox7 = new HZH_Controls.Controls.UCNumTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.ucTextBoxEx1 = new HZH_Controls.Controls.UCTextBoxEx();
-            this.ucNumTextBox3 = new HZH_Controls.Controls.UCNumTextBox();
-            this.ucTextBoxEx2 = new HZH_Controls.Controls.UCTextBoxEx();
-            this.ucNumTextBox9 = new HZH_Controls.Controls.UCNumTextBox();
-            this.ucNumTextBox11 = new HZH_Controls.Controls.UCNumTextBox();
+            this.panelEx6.SuspendLayout();
             this.panelEx5.SuspendLayout();
             this.panelEx3.SuspendLayout();
-            this.panelEx1.SuspendLayout();
-            this.panelEx6.SuspendLayout();
             this.panelEx2.SuspendLayout();
+            this.panelEx1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ucBtnExt3
@@ -166,6 +166,7 @@ namespace WindowsFormsApp1
             this.ucBtnExt4.TabStop = false;
             this.ucBtnExt4.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
             this.ucBtnExt4.TipsText = "";
+            this.ucBtnExt4.BtnClick += new System.EventHandler(this.ucBtnExt4_BtnClick);
             // 
             // timer1
             // 
@@ -178,6 +179,340 @@ namespace WindowsFormsApp1
             this.timer3.Enabled = true;
             this.timer3.Interval = 1000;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
+            // ucSignalLamp1
+            // 
+            this.ucSignalLamp1.IsHighlight = true;
+            this.ucSignalLamp1.IsShowBorder = false;
+            this.ucSignalLamp1.LampColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))))};
+            this.ucSignalLamp1.Location = new System.Drawing.Point(506, 703);
+            this.ucSignalLamp1.Margin = new System.Windows.Forms.Padding(4);
+            this.ucSignalLamp1.Name = "ucSignalLamp1";
+            this.ucSignalLamp1.Size = new System.Drawing.Size(34, 34);
+            this.ucSignalLamp1.TabIndex = 2;
+            this.ucSignalLamp1.TwinkleSpeed = 0;
+            // 
+            // ucBtnExt2
+            // 
+            this.ucBtnExt2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ucBtnExt2.BtnBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ucBtnExt2.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucBtnExt2.BtnForeColor = System.Drawing.Color.White;
+            this.ucBtnExt2.BtnText = "预警设置";
+            this.ucBtnExt2.ConerRadius = 5;
+            this.ucBtnExt2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnExt2.EnabledMouseEffect = true;
+            this.ucBtnExt2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
+            this.ucBtnExt2.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucBtnExt2.IsRadius = true;
+            this.ucBtnExt2.IsShowRect = true;
+            this.ucBtnExt2.IsShowTips = false;
+            this.ucBtnExt2.Location = new System.Drawing.Point(224, 698);
+            this.ucBtnExt2.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnExt2.Name = "ucBtnExt2";
+            this.ucBtnExt2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
+            this.ucBtnExt2.RectWidth = 1;
+            this.ucBtnExt2.Size = new System.Drawing.Size(149, 39);
+            this.ucBtnExt2.TabIndex = 2;
+            this.ucBtnExt2.TabStop = false;
+            this.ucBtnExt2.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucBtnExt2.TipsText = "";
+            this.ucBtnExt2.BtnClick += new System.EventHandler(this.ucBtnExt2_BtnClick);
+            // 
+            // ucBtnExt1
+            // 
+            this.ucBtnExt1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ucBtnExt1.BtnBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ucBtnExt1.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucBtnExt1.BtnForeColor = System.Drawing.Color.White;
+            this.ucBtnExt1.BtnText = "基本设置";
+            this.ucBtnExt1.ConerRadius = 5;
+            this.ucBtnExt1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnExt1.EnabledMouseEffect = true;
+            this.ucBtnExt1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
+            this.ucBtnExt1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucBtnExt1.IsRadius = true;
+            this.ucBtnExt1.IsShowRect = true;
+            this.ucBtnExt1.IsShowTips = false;
+            this.ucBtnExt1.Location = new System.Drawing.Point(16, 698);
+            this.ucBtnExt1.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnExt1.Name = "ucBtnExt1";
+            this.ucBtnExt1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
+            this.ucBtnExt1.RectWidth = 1;
+            this.ucBtnExt1.Size = new System.Drawing.Size(149, 39);
+            this.ucBtnExt1.TabIndex = 0;
+            this.ucBtnExt1.TabStop = false;
+            this.ucBtnExt1.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucBtnExt1.TipsText = "";
+            this.ucBtnExt1.BtnClick += new System.EventHandler(this.ucBtnExt1_BtnClick);
+            // 
+            // ucBtnExt6
+            // 
+            this.ucBtnExt6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ucBtnExt6.BtnBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ucBtnExt6.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucBtnExt6.BtnForeColor = System.Drawing.Color.White;
+            this.ucBtnExt6.BtnText = "隐藏";
+            this.ucBtnExt6.ConerRadius = 5;
+            this.ucBtnExt6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnExt6.EnabledMouseEffect = true;
+            this.ucBtnExt6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
+            this.ucBtnExt6.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucBtnExt6.IsRadius = true;
+            this.ucBtnExt6.IsShowRect = true;
+            this.ucBtnExt6.IsShowTips = false;
+            this.ucBtnExt6.Location = new System.Drawing.Point(701, 699);
+            this.ucBtnExt6.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnExt6.Name = "ucBtnExt6";
+            this.ucBtnExt6.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
+            this.ucBtnExt6.RectWidth = 1;
+            this.ucBtnExt6.Size = new System.Drawing.Size(63, 38);
+            this.ucBtnExt6.TabIndex = 44;
+            this.ucBtnExt6.TabStop = false;
+            this.ucBtnExt6.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucBtnExt6.TipsText = "";
+            this.ucBtnExt6.BtnClick += new System.EventHandler(this.ucBtnExt6_BtnClick);
+            // 
+            // ucBtnExt5
+            // 
+            this.ucBtnExt5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ucBtnExt5.BtnBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ucBtnExt5.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucBtnExt5.BtnForeColor = System.Drawing.Color.White;
+            this.ucBtnExt5.BtnText = "全屏";
+            this.ucBtnExt5.ConerRadius = 5;
+            this.ucBtnExt5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnExt5.EnabledMouseEffect = true;
+            this.ucBtnExt5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
+            this.ucBtnExt5.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucBtnExt5.IsRadius = true;
+            this.ucBtnExt5.IsShowRect = true;
+            this.ucBtnExt5.IsShowTips = false;
+            this.ucBtnExt5.Location = new System.Drawing.Point(405, 699);
+            this.ucBtnExt5.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnExt5.Name = "ucBtnExt5";
+            this.ucBtnExt5.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
+            this.ucBtnExt5.RectWidth = 1;
+            this.ucBtnExt5.Size = new System.Drawing.Size(63, 38);
+            this.ucBtnExt5.TabIndex = 43;
+            this.ucBtnExt5.TabStop = false;
+            this.ucBtnExt5.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucBtnExt5.TipsText = "";
+            this.ucBtnExt5.BtnClick += new System.EventHandler(this.ucBtnExt5_BtnClick);
+            // 
+            // cartesianChart2
+            // 
+            this.cartesianChart2.Location = new System.Drawing.Point(717, 13);
+            this.cartesianChart2.Margin = new System.Windows.Forms.Padding(4);
+            this.cartesianChart2.Name = "cartesianChart2";
+            this.cartesianChart2.Size = new System.Drawing.Size(450, 235);
+            this.cartesianChart2.TabIndex = 5;
+            this.cartesianChart2.Text = "cartesianChart2";
+            // 
+            // cartesianChart1
+            // 
+            this.cartesianChart1.ForeColor = System.Drawing.Color.White;
+            this.cartesianChart1.Location = new System.Drawing.Point(3, 13);
+            this.cartesianChart1.Margin = new System.Windows.Forms.Padding(4);
+            this.cartesianChart1.Name = "cartesianChart1";
+            this.cartesianChart1.Size = new System.Drawing.Size(450, 235);
+            this.cartesianChart1.TabIndex = 43;
+            this.cartesianChart1.Text = "cartesianChart1";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("宋体", 11.25F);
+            this.label28.ForeColor = System.Drawing.Color.White;
+            this.label28.Location = new System.Drawing.Point(35, 13);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(66, 19);
+            this.label28.TabIndex = 44;
+            this.label28.Text = "标题一";
+            this.label28.Click += new System.EventHandler(this.label28_Click);
+            // 
+            // panelEx6
+            // 
+            this.panelEx6.BorderColor = System.Drawing.Color.Transparent;
+            this.panelEx6.BorderSize = 1;
+            this.panelEx6.Controls.Add(this.label27);
+            this.panelEx6.Controls.Add(this.label26);
+            this.panelEx6.Controls.Add(this.ucSwitch2);
+            this.panelEx6.Controls.Add(this.ucCombox2);
+            this.panelEx6.Controls.Add(this.label25);
+            this.panelEx6.Controls.Add(this.textBoxEx8);
+            this.panelEx6.Controls.Add(this.label23);
+            this.panelEx6.Controls.Add(this.label24);
+            this.panelEx6.Controls.Add(this.textBoxEx7);
+            this.panelEx6.Location = new System.Drawing.Point(459, 13);
+            this.panelEx6.Name = "panelEx6";
+            this.panelEx6.Size = new System.Drawing.Size(251, 235);
+            this.panelEx6.TabIndex = 46;
+            // 
+            // label27
+            // 
+            this.label27.BackColor = System.Drawing.Color.OrangeRed;
+            this.label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label27.Font = new System.Drawing.Font("宋体", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label27.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label27.Location = new System.Drawing.Point(8, 150);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(235, 4);
+            this.label27.TabIndex = 50;
+            this.label27.Text = "label27";
+            // 
+            // label26
+            // 
+            this.label26.BackColor = System.Drawing.Color.OrangeRed;
+            this.label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label26.Font = new System.Drawing.Font("宋体", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label26.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label26.Location = new System.Drawing.Point(8, 73);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(235, 4);
+            this.label26.TabIndex = 49;
+            this.label26.Text = "label26";
+            // 
+            // ucSwitch2
+            // 
+            this.ucSwitch2.BackColor = System.Drawing.Color.Transparent;
+            this.ucSwitch2.Checked = false;
+            this.ucSwitch2.FalseColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.ucSwitch2.FalseTextColr = System.Drawing.Color.White;
+            this.ucSwitch2.Location = new System.Drawing.Point(57, 176);
+            this.ucSwitch2.Margin = new System.Windows.Forms.Padding(4);
+            this.ucSwitch2.Name = "ucSwitch2";
+            this.ucSwitch2.Size = new System.Drawing.Size(80, 39);
+            this.ucSwitch2.SwitchType = HZH_Controls.Controls.SwitchType.Ellipse;
+            this.ucSwitch2.TabIndex = 43;
+            this.ucSwitch2.Texts = new string[] {
+        "人工",
+        "智能"};
+            this.ucSwitch2.TrueColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
+            this.ucSwitch2.TrueTextColr = System.Drawing.Color.White;
+            this.ucSwitch2.CheckedChanged += new System.EventHandler(this.ucSwitch2_CheckedChanged);
+            // 
+            // ucCombox2
+            // 
+            this.ucCombox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ucCombox2.BackColorExt = System.Drawing.SystemColors.ControlDarkDark;
+            this.ucCombox2.BoxStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.ucCombox2.ConerRadius = 5;
+            this.ucCombox2.DropPanelHeight = -1;
+            this.ucCombox2.FillColor = System.Drawing.Color.White;
+            this.ucCombox2.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucCombox2.IsRadius = true;
+            this.ucCombox2.IsShowRect = true;
+            this.ucCombox2.ItemWidth = 70;
+            this.ucCombox2.Location = new System.Drawing.Point(145, 175);
+            this.ucCombox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.ucCombox2.Name = "ucCombox2";
+            this.ucCombox2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.ucCombox2.RectWidth = 1;
+            this.ucCombox2.SelectedIndex = -1;
+            this.ucCombox2.SelectedValue = "";
+            this.ucCombox2.Size = new System.Drawing.Size(96, 40);
+            this.ucCombox2.Source = ((System.Collections.Generic.List<System.Collections.Generic.KeyValuePair<string, string>>)(resources.GetObject("ucCombox2.Source")));
+            this.ucCombox2.TabIndex = 48;
+            this.ucCombox2.TextValue = null;
+            this.ucCombox2.TriangleColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("宋体", 11.25F);
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(2, 181);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(47, 19);
+            this.label25.TabIndex = 47;
+            this.label25.Text = "工况";
+            // 
+            // textBoxEx8
+            // 
+            this.textBoxEx8.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBoxEx8.DecLength = 2;
+            this.textBoxEx8.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBoxEx8.ForeColor = System.Drawing.Color.White;
+            this.textBoxEx8.InputType = HZH_Controls.TextInputType.NotControl;
+            this.textBoxEx8.Location = new System.Drawing.Point(145, 92);
+            this.textBoxEx8.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEx8.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.textBoxEx8.MinValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.textBoxEx8.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.textBoxEx8.Name = "textBoxEx8";
+            this.textBoxEx8.OldText = null;
+            this.textBoxEx8.PromptColor = System.Drawing.Color.Gray;
+            this.textBoxEx8.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.textBoxEx8.PromptText = "";
+            this.textBoxEx8.RegexPattern = "";
+            this.textBoxEx8.Size = new System.Drawing.Size(96, 35);
+            this.textBoxEx8.TabIndex = 46;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("宋体", 11.25F);
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(4, 23);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(135, 19);
+            this.label23.TabIndex = 44;
+            this.label23.Text = "压力偏差(MPa)";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("宋体", 11.25F);
+            this.label24.ForeColor = System.Drawing.Color.White;
+            this.label24.Location = new System.Drawing.Point(2, 100);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(135, 19);
+            this.label24.TabIndex = 45;
+            this.label24.Text = "流量偏差(L/s)";
+            // 
+            // textBoxEx7
+            // 
+            this.textBoxEx7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBoxEx7.DecLength = 2;
+            this.textBoxEx7.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBoxEx7.ForeColor = System.Drawing.Color.White;
+            this.textBoxEx7.InputType = HZH_Controls.TextInputType.NotControl;
+            this.textBoxEx7.Location = new System.Drawing.Point(145, 15);
+            this.textBoxEx7.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEx7.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.textBoxEx7.MinValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.textBoxEx7.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.textBoxEx7.Name = "textBoxEx7";
+            this.textBoxEx7.OldText = null;
+            this.textBoxEx7.PromptColor = System.Drawing.Color.Gray;
+            this.textBoxEx7.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.textBoxEx7.PromptText = "";
+            this.textBoxEx7.RegexPattern = "";
+            this.textBoxEx7.Size = new System.Drawing.Size(96, 35);
+            this.textBoxEx7.TabIndex = 42;
             // 
             // panelEx5
             // 
@@ -625,73 +960,6 @@ namespace WindowsFormsApp1
             this.ucNumTextBox1.Size = new System.Drawing.Size(186, 40);
             this.ucNumTextBox1.TabIndex = 6;
             // 
-            // ucSignalLamp1
-            // 
-            this.ucSignalLamp1.IsHighlight = true;
-            this.ucSignalLamp1.IsShowBorder = false;
-            this.ucSignalLamp1.LampColor = new System.Drawing.Color[] {
-        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))))};
-            this.ucSignalLamp1.Location = new System.Drawing.Point(506, 703);
-            this.ucSignalLamp1.Margin = new System.Windows.Forms.Padding(4);
-            this.ucSignalLamp1.Name = "ucSignalLamp1";
-            this.ucSignalLamp1.Size = new System.Drawing.Size(34, 34);
-            this.ucSignalLamp1.TabIndex = 2;
-            this.ucSignalLamp1.TwinkleSpeed = 0;
-            // 
-            // ucBtnExt2
-            // 
-            this.ucBtnExt2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ucBtnExt2.BtnBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ucBtnExt2.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt2.BtnForeColor = System.Drawing.Color.White;
-            this.ucBtnExt2.BtnText = "预警设置";
-            this.ucBtnExt2.ConerRadius = 5;
-            this.ucBtnExt2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucBtnExt2.EnabledMouseEffect = true;
-            this.ucBtnExt2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
-            this.ucBtnExt2.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucBtnExt2.IsRadius = true;
-            this.ucBtnExt2.IsShowRect = true;
-            this.ucBtnExt2.IsShowTips = false;
-            this.ucBtnExt2.Location = new System.Drawing.Point(224, 698);
-            this.ucBtnExt2.Margin = new System.Windows.Forms.Padding(0);
-            this.ucBtnExt2.Name = "ucBtnExt2";
-            this.ucBtnExt2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
-            this.ucBtnExt2.RectWidth = 1;
-            this.ucBtnExt2.Size = new System.Drawing.Size(149, 39);
-            this.ucBtnExt2.TabIndex = 2;
-            this.ucBtnExt2.TabStop = false;
-            this.ucBtnExt2.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.ucBtnExt2.TipsText = "";
-            this.ucBtnExt2.BtnClick += new System.EventHandler(this.ucBtnExt2_BtnClick);
-            // 
-            // ucBtnExt1
-            // 
-            this.ucBtnExt1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ucBtnExt1.BtnBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ucBtnExt1.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt1.BtnForeColor = System.Drawing.Color.White;
-            this.ucBtnExt1.BtnText = "基本设置";
-            this.ucBtnExt1.ConerRadius = 5;
-            this.ucBtnExt1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucBtnExt1.EnabledMouseEffect = true;
-            this.ucBtnExt1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
-            this.ucBtnExt1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucBtnExt1.IsRadius = true;
-            this.ucBtnExt1.IsShowRect = true;
-            this.ucBtnExt1.IsShowTips = false;
-            this.ucBtnExt1.Location = new System.Drawing.Point(16, 698);
-            this.ucBtnExt1.Margin = new System.Windows.Forms.Padding(0);
-            this.ucBtnExt1.Name = "ucBtnExt1";
-            this.ucBtnExt1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
-            this.ucBtnExt1.RectWidth = 1;
-            this.ucBtnExt1.Size = new System.Drawing.Size(149, 39);
-            this.ucBtnExt1.TabIndex = 0;
-            this.ucBtnExt1.TabStop = false;
-            this.ucBtnExt1.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.ucBtnExt1.TipsText = "";
-            this.ucBtnExt1.BtnClick += new System.EventHandler(this.ucBtnExt1_BtnClick);
-            // 
             // panelEx3
             // 
             this.panelEx3.BorderColor = System.Drawing.Color.Tomato;
@@ -906,59 +1174,320 @@ namespace WindowsFormsApp1
             this.ucNumTextBox14.Size = new System.Drawing.Size(186, 40);
             this.ucNumTextBox14.TabIndex = 35;
             // 
-            // ucBtnExt6
+            // panelEx2
             // 
-            this.ucBtnExt6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ucBtnExt6.BtnBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ucBtnExt6.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt6.BtnForeColor = System.Drawing.Color.White;
-            this.ucBtnExt6.BtnText = "隐藏";
-            this.ucBtnExt6.ConerRadius = 5;
-            this.ucBtnExt6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucBtnExt6.EnabledMouseEffect = true;
-            this.ucBtnExt6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
-            this.ucBtnExt6.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucBtnExt6.IsRadius = true;
-            this.ucBtnExt6.IsShowRect = true;
-            this.ucBtnExt6.IsShowTips = false;
-            this.ucBtnExt6.Location = new System.Drawing.Point(701, 699);
-            this.ucBtnExt6.Margin = new System.Windows.Forms.Padding(0);
-            this.ucBtnExt6.Name = "ucBtnExt6";
-            this.ucBtnExt6.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
-            this.ucBtnExt6.RectWidth = 1;
-            this.ucBtnExt6.Size = new System.Drawing.Size(63, 38);
-            this.ucBtnExt6.TabIndex = 44;
-            this.ucBtnExt6.TabStop = false;
-            this.ucBtnExt6.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.ucBtnExt6.TipsText = "";
-            this.ucBtnExt6.BtnClick += new System.EventHandler(this.ucBtnExt6_BtnClick);
+            this.panelEx2.BorderColor = System.Drawing.Color.Tomato;
+            this.panelEx2.BorderSize = 2;
+            this.panelEx2.Controls.Add(this.ucNumTextBox11);
+            this.panelEx2.Controls.Add(this.ucNumTextBox9);
+            this.panelEx2.Controls.Add(this.ucTextBoxEx2);
+            this.panelEx2.Controls.Add(this.ucNumTextBox3);
+            this.panelEx2.Controls.Add(this.ucTextBoxEx1);
+            this.panelEx2.Controls.Add(this.label8);
+            this.panelEx2.Controls.Add(this.label9);
+            this.panelEx2.Controls.Add(this.label5);
+            this.panelEx2.Controls.Add(this.label6);
+            this.panelEx2.Controls.Add(this.label2);
+            this.panelEx2.Controls.Add(this.label1);
+            this.panelEx2.Controls.Add(this.ucNumTextBox7);
+            this.panelEx2.Location = new System.Drawing.Point(3, 323);
+            this.panelEx2.Margin = new System.Windows.Forms.Padding(4);
+            this.panelEx2.Name = "panelEx2";
+            this.panelEx2.Size = new System.Drawing.Size(1176, 109);
+            this.panelEx2.TabIndex = 2;
             // 
-            // ucBtnExt5
+            // ucNumTextBox11
             // 
-            this.ucBtnExt5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ucBtnExt5.BtnBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ucBtnExt5.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt5.BtnForeColor = System.Drawing.Color.White;
-            this.ucBtnExt5.BtnText = "全屏";
-            this.ucBtnExt5.ConerRadius = 5;
-            this.ucBtnExt5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucBtnExt5.EnabledMouseEffect = true;
-            this.ucBtnExt5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
-            this.ucBtnExt5.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucBtnExt5.IsRadius = true;
-            this.ucBtnExt5.IsShowRect = true;
-            this.ucBtnExt5.IsShowTips = false;
-            this.ucBtnExt5.Location = new System.Drawing.Point(405, 699);
-            this.ucBtnExt5.Margin = new System.Windows.Forms.Padding(0);
-            this.ucBtnExt5.Name = "ucBtnExt5";
-            this.ucBtnExt5.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
-            this.ucBtnExt5.RectWidth = 1;
-            this.ucBtnExt5.Size = new System.Drawing.Size(63, 38);
-            this.ucBtnExt5.TabIndex = 43;
-            this.ucBtnExt5.TabStop = false;
-            this.ucBtnExt5.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.ucBtnExt5.TipsText = "";
-            this.ucBtnExt5.BtnClick += new System.EventHandler(this.ucBtnExt5_BtnClick);
+            this.ucNumTextBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucNumTextBox11.ForeColor = System.Drawing.Color.White;
+            this.ucNumTextBox11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.ucNumTextBox11.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.ucNumTextBox11.InputType = HZH_Controls.TextInputType.Number;
+            this.ucNumTextBox11.IsNumCanInput = true;
+            this.ucNumTextBox11.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderNum;
+            this.ucNumTextBox11.Location = new System.Drawing.Point(973, 56);
+            this.ucNumTextBox11.Margin = new System.Windows.Forms.Padding(4);
+            this.ucNumTextBox11.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.ucNumTextBox11.MinValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.ucNumTextBox11.Name = "ucNumTextBox11";
+            this.ucNumTextBox11.Num = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.ucNumTextBox11.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucNumTextBox11.Size = new System.Drawing.Size(186, 40);
+            this.ucNumTextBox11.TabIndex = 36;
+            // 
+            // ucNumTextBox9
+            // 
+            this.ucNumTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucNumTextBox9.ForeColor = System.Drawing.Color.White;
+            this.ucNumTextBox9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.ucNumTextBox9.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.ucNumTextBox9.InputType = HZH_Controls.TextInputType.Number;
+            this.ucNumTextBox9.IsNumCanInput = true;
+            this.ucNumTextBox9.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderNum;
+            this.ucNumTextBox9.Location = new System.Drawing.Point(573, 56);
+            this.ucNumTextBox9.Margin = new System.Windows.Forms.Padding(4);
+            this.ucNumTextBox9.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.ucNumTextBox9.MinValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.ucNumTextBox9.Name = "ucNumTextBox9";
+            this.ucNumTextBox9.Num = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.ucNumTextBox9.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucNumTextBox9.Size = new System.Drawing.Size(186, 40);
+            this.ucNumTextBox9.TabIndex = 35;
+            // 
+            // ucTextBoxEx2
+            // 
+            this.ucTextBoxEx2.BackColor = System.Drawing.Color.DimGray;
+            this.ucTextBoxEx2.ConerRadius = 5;
+            this.ucTextBoxEx2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ucTextBoxEx2.DecLength = 2;
+            this.ucTextBoxEx2.FillColor = System.Drawing.Color.DimGray;
+            this.ucTextBoxEx2.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
+            this.ucTextBoxEx2.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucTextBoxEx2.InputText = "";
+            this.ucTextBoxEx2.InputType = HZH_Controls.TextInputType.NotControl;
+            this.ucTextBoxEx2.IsFocusColor = true;
+            this.ucTextBoxEx2.IsRadius = true;
+            this.ucTextBoxEx2.IsShowClearBtn = true;
+            this.ucTextBoxEx2.IsShowKeyboard = true;
+            this.ucTextBoxEx2.IsShowRect = true;
+            this.ucTextBoxEx2.IsShowSearchBtn = false;
+            this.ucTextBoxEx2.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderNum;
+            this.ucTextBoxEx2.Location = new System.Drawing.Point(972, 12);
+            this.ucTextBoxEx2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucTextBoxEx2.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.ucTextBoxEx2.MinValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.ucTextBoxEx2.Name = "ucTextBoxEx2";
+            this.ucTextBoxEx2.Padding = new System.Windows.Forms.Padding(5);
+            this.ucTextBoxEx2.PromptColor = System.Drawing.Color.Gray;
+            this.ucTextBoxEx2.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucTextBoxEx2.PromptText = "";
+            this.ucTextBoxEx2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.ucTextBoxEx2.RectWidth = 1;
+            this.ucTextBoxEx2.RegexPattern = "";
+            this.ucTextBoxEx2.Size = new System.Drawing.Size(186, 40);
+            this.ucTextBoxEx2.TabIndex = 29;
+            // 
+            // ucNumTextBox3
+            // 
+            this.ucNumTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucNumTextBox3.ForeColor = System.Drawing.SystemColors.Control;
+            this.ucNumTextBox3.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.ucNumTextBox3.InputType = HZH_Controls.TextInputType.UnsignNumber;
+            this.ucNumTextBox3.IsNumCanInput = true;
+            this.ucNumTextBox3.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderNum;
+            this.ucNumTextBox3.Location = new System.Drawing.Point(186, 12);
+            this.ucNumTextBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.ucNumTextBox3.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.ucNumTextBox3.MinValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.ucNumTextBox3.Name = "ucNumTextBox3";
+            this.ucNumTextBox3.Num = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.ucNumTextBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucNumTextBox3.Size = new System.Drawing.Size(186, 40);
+            this.ucNumTextBox3.TabIndex = 25;
+            // 
+            // ucTextBoxEx1
+            // 
+            this.ucTextBoxEx1.BackColor = System.Drawing.Color.DimGray;
+            this.ucTextBoxEx1.ConerRadius = 5;
+            this.ucTextBoxEx1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ucTextBoxEx1.DecLength = 2;
+            this.ucTextBoxEx1.FillColor = System.Drawing.Color.DimGray;
+            this.ucTextBoxEx1.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
+            this.ucTextBoxEx1.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucTextBoxEx1.InputText = "";
+            this.ucTextBoxEx1.InputType = HZH_Controls.TextInputType.NotControl;
+            this.ucTextBoxEx1.IsFocusColor = true;
+            this.ucTextBoxEx1.IsRadius = true;
+            this.ucTextBoxEx1.IsShowClearBtn = true;
+            this.ucTextBoxEx1.IsShowKeyboard = true;
+            this.ucTextBoxEx1.IsShowRect = true;
+            this.ucTextBoxEx1.IsShowSearchBtn = false;
+            this.ucTextBoxEx1.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderNum;
+            this.ucTextBoxEx1.Location = new System.Drawing.Point(573, 12);
+            this.ucTextBoxEx1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucTextBoxEx1.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.ucTextBoxEx1.MinValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.ucTextBoxEx1.Name = "ucTextBoxEx1";
+            this.ucTextBoxEx1.Padding = new System.Windows.Forms.Padding(5);
+            this.ucTextBoxEx1.PromptColor = System.Drawing.Color.Gray;
+            this.ucTextBoxEx1.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucTextBoxEx1.PromptText = "";
+            this.ucTextBoxEx1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.ucTextBoxEx1.RectWidth = 1;
+            this.ucTextBoxEx1.RegexPattern = "";
+            this.ucTextBoxEx1.Size = new System.Drawing.Size(186, 40);
+            this.ucTextBoxEx1.TabIndex = 22;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("宋体", 11.25F);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(778, 64);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(153, 19);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "回压测量（MPa）";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("宋体", 11.25F);
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(778, 18);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(173, 19);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "出口密度（g/cm³）";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("宋体", 11.25F);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(396, 64);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(153, 19);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "回压设置（MPa）";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("宋体", 11.25F);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(396, 18);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(153, 19);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "出口流量（L/s）";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("宋体", 11.25F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(10, 64);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(153, 19);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "立管压力（MPa）";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("宋体", 11.25F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(10, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(153, 19);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "入口流量（L/s）";
+            // 
+            // ucNumTextBox7
+            // 
+            this.ucNumTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucNumTextBox7.ForeColor = System.Drawing.Color.White;
+            this.ucNumTextBox7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.ucNumTextBox7.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.ucNumTextBox7.InputType = HZH_Controls.TextInputType.Number;
+            this.ucNumTextBox7.IsNumCanInput = true;
+            this.ucNumTextBox7.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderNum;
+            this.ucNumTextBox7.Location = new System.Drawing.Point(186, 56);
+            this.ucNumTextBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.ucNumTextBox7.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.ucNumTextBox7.MinValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.ucNumTextBox7.Name = "ucNumTextBox7";
+            this.ucNumTextBox7.Num = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.ucNumTextBox7.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucNumTextBox7.Size = new System.Drawing.Size(186, 40);
+            this.ucNumTextBox7.TabIndex = 24;
             // 
             // panelEx1
             // 
@@ -1120,533 +1649,6 @@ namespace WindowsFormsApp1
             this.ucSwitch1.TrueTextColr = System.Drawing.Color.White;
             this.ucSwitch1.CheckedChanged += new System.EventHandler(this.ucSwitch1_CheckedChanged);
             // 
-            // cartesianChart2
-            // 
-            this.cartesianChart2.Location = new System.Drawing.Point(717, 13);
-            this.cartesianChart2.Margin = new System.Windows.Forms.Padding(4);
-            this.cartesianChart2.Name = "cartesianChart2";
-            this.cartesianChart2.Size = new System.Drawing.Size(450, 235);
-            this.cartesianChart2.TabIndex = 5;
-            this.cartesianChart2.Text = "cartesianChart2";
-            // 
-            // cartesianChart1
-            // 
-            this.cartesianChart1.ForeColor = System.Drawing.Color.White;
-            this.cartesianChart1.Location = new System.Drawing.Point(3, 13);
-            this.cartesianChart1.Margin = new System.Windows.Forms.Padding(4);
-            this.cartesianChart1.Name = "cartesianChart1";
-            this.cartesianChart1.Size = new System.Drawing.Size(450, 235);
-            this.cartesianChart1.TabIndex = 43;
-            this.cartesianChart1.Text = "cartesianChart1";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("宋体", 11.25F);
-            this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(35, 13);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(66, 19);
-            this.label28.TabIndex = 44;
-            this.label28.Text = "标题一";
-            this.label28.Click += new System.EventHandler(this.label28_Click);
-            // 
-            // panelEx6
-            // 
-            this.panelEx6.BorderColor = System.Drawing.Color.Transparent;
-            this.panelEx6.BorderSize = 1;
-            this.panelEx6.Controls.Add(this.label27);
-            this.panelEx6.Controls.Add(this.label26);
-            this.panelEx6.Controls.Add(this.ucSwitch2);
-            this.panelEx6.Controls.Add(this.ucCombox2);
-            this.panelEx6.Controls.Add(this.label25);
-            this.panelEx6.Controls.Add(this.textBoxEx8);
-            this.panelEx6.Controls.Add(this.label23);
-            this.panelEx6.Controls.Add(this.label24);
-            this.panelEx6.Controls.Add(this.textBoxEx7);
-            this.panelEx6.Location = new System.Drawing.Point(459, 13);
-            this.panelEx6.Name = "panelEx6";
-            this.panelEx6.Size = new System.Drawing.Size(251, 235);
-            this.panelEx6.TabIndex = 46;
-            // 
-            // label27
-            // 
-            this.label27.BackColor = System.Drawing.Color.OrangeRed;
-            this.label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label27.Font = new System.Drawing.Font("宋体", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label27.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label27.Location = new System.Drawing.Point(8, 150);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(235, 4);
-            this.label27.TabIndex = 50;
-            this.label27.Text = "label27";
-            // 
-            // label26
-            // 
-            this.label26.BackColor = System.Drawing.Color.OrangeRed;
-            this.label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label26.Font = new System.Drawing.Font("宋体", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label26.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label26.Location = new System.Drawing.Point(8, 73);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(235, 4);
-            this.label26.TabIndex = 49;
-            this.label26.Text = "label26";
-            // 
-            // ucSwitch2
-            // 
-            this.ucSwitch2.BackColor = System.Drawing.Color.Transparent;
-            this.ucSwitch2.Checked = false;
-            this.ucSwitch2.FalseColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
-            this.ucSwitch2.FalseTextColr = System.Drawing.Color.White;
-            this.ucSwitch2.Location = new System.Drawing.Point(57, 176);
-            this.ucSwitch2.Margin = new System.Windows.Forms.Padding(4);
-            this.ucSwitch2.Name = "ucSwitch2";
-            this.ucSwitch2.Size = new System.Drawing.Size(80, 39);
-            this.ucSwitch2.SwitchType = HZH_Controls.Controls.SwitchType.Ellipse;
-            this.ucSwitch2.TabIndex = 43;
-            this.ucSwitch2.Texts = new string[] {
-        "人工",
-        "智能"};
-            this.ucSwitch2.TrueColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
-            this.ucSwitch2.TrueTextColr = System.Drawing.Color.White;
-            // 
-            // ucCombox2
-            // 
-            this.ucCombox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ucCombox2.BackColorExt = System.Drawing.SystemColors.ControlDarkDark;
-            this.ucCombox2.BoxStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.ucCombox2.ConerRadius = 5;
-            this.ucCombox2.DropPanelHeight = -1;
-            this.ucCombox2.FillColor = System.Drawing.Color.White;
-            this.ucCombox2.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucCombox2.IsRadius = true;
-            this.ucCombox2.IsShowRect = true;
-            this.ucCombox2.ItemWidth = 70;
-            this.ucCombox2.Location = new System.Drawing.Point(145, 175);
-            this.ucCombox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.ucCombox2.Name = "ucCombox2";
-            this.ucCombox2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.ucCombox2.RectWidth = 1;
-            this.ucCombox2.SelectedIndex = -1;
-            this.ucCombox2.SelectedValue = "";
-            this.ucCombox2.Size = new System.Drawing.Size(96, 40);
-            this.ucCombox2.Source = ((System.Collections.Generic.List<System.Collections.Generic.KeyValuePair<string, string>>)(resources.GetObject("ucCombox2.Source")));
-            this.ucCombox2.TabIndex = 48;
-            this.ucCombox2.TextValue = null;
-            this.ucCombox2.TriangleColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("宋体", 11.25F);
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(2, 181);
-            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(47, 19);
-            this.label25.TabIndex = 47;
-            this.label25.Text = "工况";
-            // 
-            // textBoxEx8
-            // 
-            this.textBoxEx8.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBoxEx8.DecLength = 2;
-            this.textBoxEx8.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBoxEx8.ForeColor = System.Drawing.Color.White;
-            this.textBoxEx8.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx8.Location = new System.Drawing.Point(145, 92);
-            this.textBoxEx8.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxEx8.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.textBoxEx8.MinValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.textBoxEx8.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.textBoxEx8.Name = "textBoxEx8";
-            this.textBoxEx8.OldText = null;
-            this.textBoxEx8.PromptColor = System.Drawing.Color.Gray;
-            this.textBoxEx8.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.textBoxEx8.PromptText = "";
-            this.textBoxEx8.RegexPattern = "";
-            this.textBoxEx8.Size = new System.Drawing.Size(96, 35);
-            this.textBoxEx8.TabIndex = 46;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("宋体", 11.25F);
-            this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(4, 23);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(135, 19);
-            this.label23.TabIndex = 44;
-            this.label23.Text = "压力偏差(MPa)";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("宋体", 11.25F);
-            this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(2, 100);
-            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(135, 19);
-            this.label24.TabIndex = 45;
-            this.label24.Text = "流量偏差(L/s)";
-            // 
-            // textBoxEx7
-            // 
-            this.textBoxEx7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBoxEx7.DecLength = 2;
-            this.textBoxEx7.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBoxEx7.ForeColor = System.Drawing.Color.White;
-            this.textBoxEx7.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx7.Location = new System.Drawing.Point(145, 15);
-            this.textBoxEx7.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxEx7.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.textBoxEx7.MinValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.textBoxEx7.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.textBoxEx7.Name = "textBoxEx7";
-            this.textBoxEx7.OldText = null;
-            this.textBoxEx7.PromptColor = System.Drawing.Color.Gray;
-            this.textBoxEx7.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.textBoxEx7.PromptText = "";
-            this.textBoxEx7.RegexPattern = "";
-            this.textBoxEx7.Size = new System.Drawing.Size(96, 35);
-            this.textBoxEx7.TabIndex = 42;
-            // 
-            // panelEx2
-            // 
-            this.panelEx2.BorderColor = System.Drawing.Color.Tomato;
-            this.panelEx2.BorderSize = 2;
-            this.panelEx2.Controls.Add(this.ucNumTextBox11);
-            this.panelEx2.Controls.Add(this.ucNumTextBox9);
-            this.panelEx2.Controls.Add(this.ucTextBoxEx2);
-            this.panelEx2.Controls.Add(this.ucNumTextBox3);
-            this.panelEx2.Controls.Add(this.ucTextBoxEx1);
-            this.panelEx2.Controls.Add(this.label8);
-            this.panelEx2.Controls.Add(this.label9);
-            this.panelEx2.Controls.Add(this.label5);
-            this.panelEx2.Controls.Add(this.label6);
-            this.panelEx2.Controls.Add(this.label2);
-            this.panelEx2.Controls.Add(this.label1);
-            this.panelEx2.Controls.Add(this.ucNumTextBox7);
-            this.panelEx2.Location = new System.Drawing.Point(3, 323);
-            this.panelEx2.Margin = new System.Windows.Forms.Padding(4);
-            this.panelEx2.Name = "panelEx2";
-            this.panelEx2.Size = new System.Drawing.Size(1176, 109);
-            this.panelEx2.TabIndex = 2;
-            // 
-            // ucNumTextBox7
-            // 
-            this.ucNumTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucNumTextBox7.ForeColor = System.Drawing.Color.White;
-            this.ucNumTextBox7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ucNumTextBox7.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.ucNumTextBox7.InputType = HZH_Controls.TextInputType.Number;
-            this.ucNumTextBox7.IsNumCanInput = true;
-            this.ucNumTextBox7.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderNum;
-            this.ucNumTextBox7.Location = new System.Drawing.Point(186, 56);
-            this.ucNumTextBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.ucNumTextBox7.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.ucNumTextBox7.MinValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.ucNumTextBox7.Name = "ucNumTextBox7";
-            this.ucNumTextBox7.Num = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.ucNumTextBox7.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucNumTextBox7.Size = new System.Drawing.Size(186, 40);
-            this.ucNumTextBox7.TabIndex = 24;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 11.25F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(10, 18);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 19);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "入口流量（L/s）";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("宋体", 11.25F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(10, 64);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 19);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "立管压力（MPa）";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("宋体", 11.25F);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(396, 18);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(153, 19);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "出口流量（L/s）";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("宋体", 11.25F);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(396, 64);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(153, 19);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "回压设置（MPa）";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("宋体", 11.25F);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(778, 18);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(173, 19);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "出口密度（g/cm³）";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("宋体", 11.25F);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(778, 64);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(153, 19);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "回压测量（MPa）";
-            // 
-            // ucTextBoxEx1
-            // 
-            this.ucTextBoxEx1.BackColor = System.Drawing.Color.DimGray;
-            this.ucTextBoxEx1.ConerRadius = 5;
-            this.ucTextBoxEx1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ucTextBoxEx1.DecLength = 2;
-            this.ucTextBoxEx1.FillColor = System.Drawing.Color.DimGray;
-            this.ucTextBoxEx1.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
-            this.ucTextBoxEx1.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucTextBoxEx1.InputText = "";
-            this.ucTextBoxEx1.InputType = HZH_Controls.TextInputType.NotControl;
-            this.ucTextBoxEx1.IsFocusColor = true;
-            this.ucTextBoxEx1.IsRadius = true;
-            this.ucTextBoxEx1.IsShowClearBtn = true;
-            this.ucTextBoxEx1.IsShowKeyboard = true;
-            this.ucTextBoxEx1.IsShowRect = true;
-            this.ucTextBoxEx1.IsShowSearchBtn = false;
-            this.ucTextBoxEx1.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderNum;
-            this.ucTextBoxEx1.Location = new System.Drawing.Point(573, 12);
-            this.ucTextBoxEx1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ucTextBoxEx1.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.ucTextBoxEx1.MinValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.ucTextBoxEx1.Name = "ucTextBoxEx1";
-            this.ucTextBoxEx1.Padding = new System.Windows.Forms.Padding(5);
-            this.ucTextBoxEx1.PromptColor = System.Drawing.Color.Gray;
-            this.ucTextBoxEx1.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucTextBoxEx1.PromptText = "";
-            this.ucTextBoxEx1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.ucTextBoxEx1.RectWidth = 1;
-            this.ucTextBoxEx1.RegexPattern = "";
-            this.ucTextBoxEx1.Size = new System.Drawing.Size(186, 40);
-            this.ucTextBoxEx1.TabIndex = 22;
-            // 
-            // ucNumTextBox3
-            // 
-            this.ucNumTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucNumTextBox3.ForeColor = System.Drawing.SystemColors.Control;
-            this.ucNumTextBox3.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.ucNumTextBox3.InputType = HZH_Controls.TextInputType.UnsignNumber;
-            this.ucNumTextBox3.IsNumCanInput = true;
-            this.ucNumTextBox3.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderNum;
-            this.ucNumTextBox3.Location = new System.Drawing.Point(186, 12);
-            this.ucNumTextBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.ucNumTextBox3.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.ucNumTextBox3.MinValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.ucNumTextBox3.Name = "ucNumTextBox3";
-            this.ucNumTextBox3.Num = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.ucNumTextBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucNumTextBox3.Size = new System.Drawing.Size(186, 40);
-            this.ucNumTextBox3.TabIndex = 25;
-            // 
-            // ucTextBoxEx2
-            // 
-            this.ucTextBoxEx2.BackColor = System.Drawing.Color.DimGray;
-            this.ucTextBoxEx2.ConerRadius = 5;
-            this.ucTextBoxEx2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ucTextBoxEx2.DecLength = 2;
-            this.ucTextBoxEx2.FillColor = System.Drawing.Color.DimGray;
-            this.ucTextBoxEx2.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
-            this.ucTextBoxEx2.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucTextBoxEx2.InputText = "";
-            this.ucTextBoxEx2.InputType = HZH_Controls.TextInputType.NotControl;
-            this.ucTextBoxEx2.IsFocusColor = true;
-            this.ucTextBoxEx2.IsRadius = true;
-            this.ucTextBoxEx2.IsShowClearBtn = true;
-            this.ucTextBoxEx2.IsShowKeyboard = true;
-            this.ucTextBoxEx2.IsShowRect = true;
-            this.ucTextBoxEx2.IsShowSearchBtn = false;
-            this.ucTextBoxEx2.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderNum;
-            this.ucTextBoxEx2.Location = new System.Drawing.Point(972, 12);
-            this.ucTextBoxEx2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ucTextBoxEx2.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.ucTextBoxEx2.MinValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.ucTextBoxEx2.Name = "ucTextBoxEx2";
-            this.ucTextBoxEx2.Padding = new System.Windows.Forms.Padding(5);
-            this.ucTextBoxEx2.PromptColor = System.Drawing.Color.Gray;
-            this.ucTextBoxEx2.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucTextBoxEx2.PromptText = "";
-            this.ucTextBoxEx2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.ucTextBoxEx2.RectWidth = 1;
-            this.ucTextBoxEx2.RegexPattern = "";
-            this.ucTextBoxEx2.Size = new System.Drawing.Size(186, 40);
-            this.ucTextBoxEx2.TabIndex = 29;
-            // 
-            // ucNumTextBox9
-            // 
-            this.ucNumTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucNumTextBox9.ForeColor = System.Drawing.Color.White;
-            this.ucNumTextBox9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ucNumTextBox9.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.ucNumTextBox9.InputType = HZH_Controls.TextInputType.Number;
-            this.ucNumTextBox9.IsNumCanInput = true;
-            this.ucNumTextBox9.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderNum;
-            this.ucNumTextBox9.Location = new System.Drawing.Point(573, 56);
-            this.ucNumTextBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.ucNumTextBox9.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.ucNumTextBox9.MinValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.ucNumTextBox9.Name = "ucNumTextBox9";
-            this.ucNumTextBox9.Num = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.ucNumTextBox9.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucNumTextBox9.Size = new System.Drawing.Size(186, 40);
-            this.ucNumTextBox9.TabIndex = 35;
-            // 
-            // ucNumTextBox11
-            // 
-            this.ucNumTextBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucNumTextBox11.ForeColor = System.Drawing.Color.White;
-            this.ucNumTextBox11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ucNumTextBox11.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.ucNumTextBox11.InputType = HZH_Controls.TextInputType.Number;
-            this.ucNumTextBox11.IsNumCanInput = true;
-            this.ucNumTextBox11.KeyBoardType = HZH_Controls.Controls.KeyBoardType.UCKeyBorderNum;
-            this.ucNumTextBox11.Location = new System.Drawing.Point(973, 56);
-            this.ucNumTextBox11.Margin = new System.Windows.Forms.Padding(4);
-            this.ucNumTextBox11.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.ucNumTextBox11.MinValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.ucNumTextBox11.Name = "ucNumTextBox11";
-            this.ucNumTextBox11.Num = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.ucNumTextBox11.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucNumTextBox11.Size = new System.Drawing.Size(186, 40);
-            this.ucNumTextBox11.TabIndex = 36;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -1679,16 +1681,16 @@ namespace WindowsFormsApp1
             this.Load += new System.EventHandler(this.Form1_Load);
             this.DpiChanged += new System.Windows.Forms.DpiChangedEventHandler(this.Form1_DpiChanged);
             this.Resize += new System.EventHandler(this.Form1_Resize);
+            this.panelEx6.ResumeLayout(false);
+            this.panelEx6.PerformLayout();
             this.panelEx5.ResumeLayout(false);
             this.panelEx5.PerformLayout();
             this.panelEx3.ResumeLayout(false);
             this.panelEx3.PerformLayout();
-            this.panelEx1.ResumeLayout(false);
-            this.panelEx1.PerformLayout();
-            this.panelEx6.ResumeLayout(false);
-            this.panelEx6.PerformLayout();
             this.panelEx2.ResumeLayout(false);
             this.panelEx2.PerformLayout();
+            this.panelEx1.ResumeLayout(false);
+            this.panelEx1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

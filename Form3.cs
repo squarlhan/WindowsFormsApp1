@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DBTestCs;
+using HZH_Controls.Controls;
+using HZH_Controls.Forms;
 
 namespace WindowsFormsApp1
 {
@@ -15,7 +18,7 @@ namespace WindowsFormsApp1
         int ZuanGan = 1;//钻杆的数量
         int ZuanTing = 1;//钻铤的数量
         int TaoGuan = 1;//套管的数量
-        const int MaxRow = 10;//最多十行
+        const int MaxRow = 3;//最多三行
         const int MinRow = 1;//最少一行
         //钻杆
         int FirstTextBox = 36;//最初等于36
@@ -32,9 +35,12 @@ namespace WindowsFormsApp1
         //套管
         int FirstTextBoxTaoGuan = 200;
         int SecondTextBoxTaoGuan = 201;
+        Util u = new Util();
         public Form3()
         {
             InitializeComponent();
+            
+            u.init();
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
@@ -191,13 +197,13 @@ namespace WindowsFormsApp1
                     if (i == 0)
                     {
                         newList[i].Location = new Point(temp1.Location.X, temp1.Location.Y + temp1.Size.Height + 20);
-                        FirstTextBoxTaoGuan += 5;
+                        FirstTextBoxTaoGuan += 2;
                         newList[i].Name = "ucTextBoxEx" + FirstTextBoxTaoGuan;
                     }
                     else if (i == 1)
                     {
                         newList[i].Location = new Point(temp2.Location.X, temp2.Location.Y + temp2.Size.Height + 20);
-                        SecondTextBoxTaoGuan += 5;
+                        SecondTextBoxTaoGuan += 2;
                         newList[i].Name = "ucTextBoxEx" + SecondTextBoxTaoGuan;
                     }
                     
@@ -769,6 +775,368 @@ namespace WindowsFormsApp1
                     }
                 }
             }
+        }
+
+        //管柱设置
+        private void ucBtnExt3_BtnClick(object sender, EventArgs e)
+        {
+            
+            //环空容积
+            try
+            {
+                if (ucTextBoxEx28.InputText.Length != 0)
+                {
+                    double hkrj = double.Parse(ucTextBoxEx28.InputText);
+                    u.SetValue(37, hkrj);
+                }
+            }
+            catch (Exception excep)
+            {
+                FrmDialog.ShowDialog(this, "环空容积设置存在非法输入\n" + excep.Message, "输入提示");
+                return;
+            }
+            //裸眼段
+            try
+            {
+                if (ucTextBoxEx27.InputText.Length != 0)
+                {
+                    double nj = double.Parse(ucTextBoxEx28.InputText);
+                    u.SetValue(35, nj);
+                }
+                if (ucTextBoxEx26.InputText.Length != 0)
+                {
+                    double xs = double.Parse(ucTextBoxEx26.InputText);
+                    u.SetValue(36, xs);
+                }
+            }
+            catch (Exception excep)
+            {
+                FrmDialog.ShowDialog(this, "裸眼段存在非法输入\n" + excep.Message, "输入提示");
+                return;
+            }
+
+            //套管
+            try
+            {
+                UCTextBoxEx temp = null;
+                foreach (Control ctrl in this.panelEx7.Controls)//在这个面板中找到最新的label
+                {
+                    int index = 200;
+                    while (index <= 205) {
+                        if (string.Equals(ctrl.Name, "ucTextBoxEx" + index))
+                        {
+                            temp = (HZH_Controls.Controls.UCTextBoxEx)ctrl;
+
+                            if (temp.InputText.Length != 0) 
+                            {
+                                double value = double.Parse(temp.InputText);
+                                u.SetValue(index - 171, value);
+                            }
+                        }
+                        index++;
+                    }
+                    
+                }
+            }
+            catch (Exception excep)
+            {
+                FrmDialog.ShowDialog(this, "套管存在非法输入\n" + excep.Message, "输入提示");
+                return;
+            }
+
+            //钻杆
+            try
+            {
+                UCTextBoxEx temp = null;
+                foreach (Control ctrl in this.panelEx5.Controls)//在这个面板中找到最新的label
+                {
+                    int index = 36;
+                    while (index <= 45)
+                    {
+                        if (string.Equals(ctrl.Name, "ucTextBoxEx" + index))
+                        {
+                            temp = (HZH_Controls.Controls.UCTextBoxEx)ctrl;
+
+                            if (temp.InputText.Length != 0)
+                            {
+                                double value = double.Parse(temp.InputText);
+                                u.SetValue(index + 2, value);
+                            }
+                        }
+                        index++;
+                    }
+
+                }
+            }
+            catch (Exception excep)
+            {
+                FrmDialog.ShowDialog(this, "钻杆存在非法输入\n" + excep.Message, "输入提示");
+                return;
+            }
+            //钻铤
+            try
+            {
+                UCTextBoxEx temp = null;
+                foreach (Control ctrl in this.panelEx6.Controls)//在这个面板中找到最新的label
+                {
+                    int index = 100;
+                    while (index <= 114)
+                    {
+                        if (string.Equals(ctrl.Name, "ucTextBoxEx" + index))
+                        {
+                            temp = (HZH_Controls.Controls.UCTextBoxEx)ctrl;
+
+                            if (temp.InputText.Length != 0)
+                            {
+                                double value = double.Parse(temp.InputText);
+                                u.SetValue(index - 52, value);
+                            }
+                        }
+                        index++;
+                    }
+
+                }
+            }
+            catch (Exception excep)
+            {
+                FrmDialog.ShowDialog(this, "钻铤存在非法输入\n" + excep.Message, "输入提示");
+                return;
+            }
+            FrmDialog.ShowDialog(this, "数据库更新成功", "输入提示");
+            FrmDialog.ShowDialog(this, "按照之前的表，钻杆最多两个、钻铤和套管最多三个", "输入提示");
+
+        }
+
+        //基本参数设置
+        private void ucBtnExt1_BtnClick_1(object sender, EventArgs e)
+        {
+            //泵设置
+            try
+            {
+                if (ucTextBoxEx11.InputText.Length != 0)
+                {
+                    double gtzj1 = double.Parse(ucTextBoxEx11.InputText);
+                    u.SetValue(16, gtzj1);
+                }
+                if (ucTextBoxEx12.InputText.Length != 0)
+                {
+                    double gtsl1 = double.Parse(ucTextBoxEx12.InputText);
+                    u.SetValue(17, gtsl1);
+                }
+                if (ucTextBoxEx13.InputText.Length != 0)
+                {
+                    double cc1 = double.Parse(ucTextBoxEx13.InputText);
+                    u.SetValue(18, cc1);
+                }
+                if (ucTextBoxEx16.InputText.Length != 0)
+                {
+                    double gtzj2 = double.Parse(ucTextBoxEx16.InputText);
+                    u.SetValue(19, gtzj2);
+                }
+                if (ucTextBoxEx15.InputText.Length != 0)
+                {
+                    double gtsl2 = double.Parse(ucTextBoxEx15.InputText);
+                    u.SetValue(20, gtsl2);
+                }
+                if (ucTextBoxEx14.InputText.Length != 0)
+                {
+                    double cc2 = double.Parse(ucTextBoxEx14.InputText);
+                    u.SetValue(21, cc2);
+                }
+                if (ucTextBoxEx19.InputText.Length != 0)
+                {
+                    double gtzj3 = double.Parse(ucTextBoxEx19.InputText);
+                    u.SetValue(22, gtzj3);
+                }
+                if (ucTextBoxEx18.InputText.Length != 0)
+                {
+                    double gtsl3 = double.Parse(ucTextBoxEx18.InputText);
+                    u.SetValue(23, gtsl3);
+                }
+                if (ucTextBoxEx17.InputText.Length != 0)
+                {
+                    double cc3 = double.Parse(ucTextBoxEx17.InputText);
+                    u.SetValue(24, cc3);
+                }
+            }
+            catch (Exception excep) {
+                FrmDialog.ShowDialog(this, "泵设置存在非法输入\n" + excep.Message, "输入提示");
+                return;
+            }
+
+        
+            //判断值设置
+            try
+            {
+                if (ucTextBoxEx7.InputText.Length != 0)
+                {
+                    double njbgl = double.Parse(ucTextBoxEx7.InputText);
+                    u.SetValue(25, njbgl);
+                }
+                if (ucTextBoxEx8.InputText.Length != 0)
+                {
+                    double qdsy = double.Parse(ucTextBoxEx8.InputText);
+                    u.SetValue(27, qdsy);
+                }
+                if (ucTextBoxEx9.InputText.Length != 0)
+                {
+                    double tzjy = double.Parse(ucTextBoxEx9.InputText);
+                    u.SetValue(26, tzjy);
+                }
+                if (ucTextBoxEx10.InputText.Length != 0)
+                {
+                    double llpd = double.Parse(ucTextBoxEx10.InputText);
+                    u.SetValue(28, llpd);
+                }
+            }
+            catch (Exception excep)
+            {
+                FrmDialog.ShowDialog(this, "判断值设置存在非法输入\n" + excep.Message, "输入提示");
+            }
+            FrmDialog.ShowDialog(this, "数据库更新成功", "输入提示");
+
+        }
+
+        //图形显示设置
+        private void ucBtnExt6_BtnClick(object sender, EventArgs e)
+        {
+            //流量图形
+            try
+            {
+                if (ucTextBoxEx29.InputText.Length != 0)
+                {
+                    double nj = double.Parse(ucTextBoxEx29.InputText);
+                    u.SetValue(63, nj);
+                }
+                if (ucTextBoxEx30.InputText.Length != 0)
+                {
+                    double xs = double.Parse(ucTextBoxEx30.InputText);
+                    u.SetValue(64, xs);
+                }
+            }
+            catch (Exception excep)
+            {
+                FrmDialog.ShowDialog(this, "流量图形设置存在非法输入\n" + excep.Message, "输入提示");
+                return;
+            }
+            //压力图形
+            try
+            {
+                if (ucTextBoxEx31.InputText.Length != 0)
+                {
+                    double nj = double.Parse(ucTextBoxEx31.InputText);
+                    u.SetValue(65, nj);
+                }
+                if (ucTextBoxEx32.InputText.Length != 0)
+                {
+                    double xs = double.Parse(ucTextBoxEx32.InputText);
+                    u.SetValue(66, xs);
+                }
+            }
+            catch (Exception excep)
+            {
+                FrmDialog.ShowDialog(this, "压力图形设置存在非法输入\n" + excep.Message, "输入提示");
+                return;
+            }
+            FrmDialog.ShowDialog(this, "数据库更新成功", "输入提示");
+        }
+
+        private void ucBtnExt8_BtnClick(object sender, EventArgs e)
+        {
+
+        }
+        //图形显示设置--重置
+        private void ucBtnExt5_BtnClick(object sender, EventArgs e)
+        {
+            ucTextBoxEx29.InputText = "";
+            ucTextBoxEx30.InputText = "";
+            ucTextBoxEx31.InputText = "";
+            ucTextBoxEx32.InputText = "";
+        }
+
+        //管柱设置--重置
+        private void ucBtnExt4_BtnClick(object sender, EventArgs e)
+        {
+            ucTextBoxEx28.InputText = "";
+            ucTextBoxEx27.InputText = "";
+            ucTextBoxEx26.InputText = "";
+
+            //套管
+            UCTextBoxEx temp = null;
+            foreach (Control ctrl in this.panelEx7.Controls)//在这个面板中找到最新的label
+            {
+                int index = 200;
+                while (index <= 205)
+                {
+                    if (string.Equals(ctrl.Name, "ucTextBoxEx" + index))
+                    {
+                        temp = (HZH_Controls.Controls.UCTextBoxEx)ctrl;
+                        temp.InputText = "";
+                    }
+                    index++;
+                }
+
+            }
+
+            //钻杆
+            foreach (Control ctrl in this.panelEx5.Controls)//在这个面板中找到最新的label
+            {
+                int index = 36;
+                while (index <= 50)
+                {
+                    if (string.Equals(ctrl.Name, "ucTextBoxEx" + index))
+                    {
+                        temp = (HZH_Controls.Controls.UCTextBoxEx)ctrl;
+                        temp.InputText = "";
+                    }
+                    index++;
+                }
+            }
+            //钻铤
+            foreach (Control ctrl in this.panelEx6.Controls)//在这个面板中找到最新的label
+            {
+                int index = 100;
+                while (index <= 114)
+                {
+                    if (string.Equals(ctrl.Name, "ucTextBoxEx" + index))
+                    {
+                        temp = (HZH_Controls.Controls.UCTextBoxEx)ctrl;
+                        temp.InputText = "";
+                    }
+                    index++;
+                }
+
+            }
+        }
+        //基本参数--重置
+        private void ucBtnExt2_BtnClick(object sender, EventArgs e)
+        {
+            ucTextBoxEx1.InputText = "";
+            ucTextBoxEx2.InputText = "";
+            ucTextBoxEx3.InputText = "";
+            ucTextBoxEx4.InputText = "";
+            ucTextBoxEx5.InputText = "";
+            ucTextBoxEx6.InputText = "";
+            ucTextBoxEx7.InputText = "";
+            ucTextBoxEx8.InputText = "";
+            ucTextBoxEx9.InputText = "";
+            ucTextBoxEx10.InputText = "";
+            ucTextBoxEx11.InputText = "";
+            ucTextBoxEx12.InputText = "";
+            ucTextBoxEx13.InputText = "";
+            ucTextBoxEx14.InputText = "";
+            ucTextBoxEx15.InputText = "";
+            ucTextBoxEx16.InputText = "";
+            ucTextBoxEx17.InputText = "";
+            ucTextBoxEx18.InputText = "";
+            ucTextBoxEx19.InputText = "";
+        }
+
+        private void Form3_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+            e.Cancel = true;
+            this.Hide();
         }
     }
 }

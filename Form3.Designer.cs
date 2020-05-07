@@ -31,9 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.tabControlExt1 = new HZH_Controls.Controls.TabControlExt();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.panelEx4 = new WindowsFormsApp1.PanelEx(this.components);
             this.ucBtnExt2 = new HZH_Controls.Controls.UCBtnExt();
             this.ucBtnExt1 = new HZH_Controls.Controls.UCBtnExt();
@@ -76,6 +73,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panelEx3 = new WindowsFormsApp1.PanelEx(this.components);
             this.ucBtnExt11 = new HZH_Controls.Controls.UCBtnExt();
             this.ucBtnExt10 = new HZH_Controls.Controls.UCBtnExt();
@@ -121,6 +119,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panelEx2 = new WindowsFormsApp1.PanelEx(this.components);
             this.ucBtnExt5 = new HZH_Controls.Controls.UCBtnExt();
             this.ucBtnExt6 = new HZH_Controls.Controls.UCBtnExt();
@@ -134,6 +133,7 @@
             this.ucTextBoxEx29 = new HZH_Controls.Controls.UCTextBoxEx();
             this.label38 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.panelEx1 = new WindowsFormsApp1.PanelEx(this.components);
             this.ucTextBoxEx35 = new HZH_Controls.Controls.UCTextBoxEx();
             this.ucTextBoxEx34 = new HZH_Controls.Controls.UCTextBoxEx();
@@ -147,20 +147,20 @@
             this.label41 = new System.Windows.Forms.Label();
             this.tabControlExt1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             this.panelEx4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.panelEx3.SuspendLayout();
             this.panelEx7.SuspendLayout();
             this.panelEx6.SuspendLayout();
             this.panelEx5.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.panelEx2.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.panelEx1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -195,45 +195,6 @@
             this.tabPage1.Text = "基本参数设置  ";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.panelEx3);
-            this.tabPage2.Location = new System.Drawing.Point(4, 54);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(1052, 590);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "管柱设置  ";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.panelEx2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 54);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage3.Size = new System.Drawing.Size(1052, 590);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "图形显示设置  ";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.panelEx1);
-            this.tabPage4.Location = new System.Drawing.Point(4, 54);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage4.Size = new System.Drawing.Size(1052, 590);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "网络连接设置  ";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
             // panelEx4
             // 
@@ -274,6 +235,7 @@
             this.ucBtnExt2.TabStop = false;
             this.ucBtnExt2.TipsColor = System.Drawing.Color.Red;
             this.ucBtnExt2.TipsText = "";
+            this.ucBtnExt2.BtnClick += new System.EventHandler(this.ucBtnExt2_BtnClick);
             // 
             // ucBtnExt1
             // 
@@ -300,6 +262,7 @@
             this.ucBtnExt1.TabStop = false;
             this.ucBtnExt1.TipsColor = System.Drawing.Color.Red;
             this.ucBtnExt1.TipsText = "";
+            this.ucBtnExt1.BtnClick += new System.EventHandler(this.ucBtnExt1_BtnClick_1);
             // 
             // groupBox3
             // 
@@ -1318,6 +1281,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "油田";
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.panelEx3);
+            this.tabPage2.Location = new System.Drawing.Point(4, 54);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage2.Size = new System.Drawing.Size(1052, 590);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "管柱设置  ";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            // 
             // panelEx3
             // 
             this.panelEx3.BorderColor = System.Drawing.Color.Black;
@@ -2173,6 +2149,7 @@
             this.ucBtnExt4.TabStop = false;
             this.ucBtnExt4.TipsColor = System.Drawing.Color.Red;
             this.ucBtnExt4.TipsText = "";
+            this.ucBtnExt4.BtnClick += new System.EventHandler(this.ucBtnExt4_BtnClick);
             // 
             // ucBtnExt3
             // 
@@ -2199,6 +2176,7 @@
             this.ucBtnExt3.TabStop = false;
             this.ucBtnExt3.TipsColor = System.Drawing.Color.Red;
             this.ucBtnExt3.TipsText = "";
+            this.ucBtnExt3.BtnClick += new System.EventHandler(this.ucBtnExt3_BtnClick);
             // 
             // label29
             // 
@@ -2444,6 +2422,19 @@
             this.label18.TabIndex = 58;
             this.label18.Text = "类型";
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.panelEx2);
+            this.tabPage3.Location = new System.Drawing.Point(4, 54);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage3.Size = new System.Drawing.Size(1052, 590);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "图形显示设置  ";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            // 
             // panelEx2
             // 
             this.panelEx2.BorderColor = System.Drawing.Color.Black;
@@ -2482,6 +2473,7 @@
             this.ucBtnExt5.TabStop = false;
             this.ucBtnExt5.TipsColor = System.Drawing.Color.Red;
             this.ucBtnExt5.TipsText = "";
+            this.ucBtnExt5.BtnClick += new System.EventHandler(this.ucBtnExt5_BtnClick);
             // 
             // ucBtnExt6
             // 
@@ -2508,6 +2500,7 @@
             this.ucBtnExt6.TabStop = false;
             this.ucBtnExt6.TipsColor = System.Drawing.Color.Red;
             this.ucBtnExt6.TipsText = "";
+            this.ucBtnExt6.BtnClick += new System.EventHandler(this.ucBtnExt6_BtnClick);
             // 
             // groupBox5
             // 
@@ -2747,6 +2740,19 @@
             this.label37.TabIndex = 5;
             this.label37.Text = "时间显示范围（min）";
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.panelEx1);
+            this.tabPage4.Location = new System.Drawing.Point(4, 54);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage4.Size = new System.Drawing.Size(1052, 590);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "网络连接设置  ";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
+            // 
             // panelEx1
             // 
             this.panelEx1.BorderColor = System.Drawing.Color.Black;
@@ -2940,6 +2946,7 @@
             this.ucBtnExt8.TabStop = false;
             this.ucBtnExt8.TipsColor = System.Drawing.Color.Red;
             this.ucBtnExt8.TipsText = "";
+            this.ucBtnExt8.BtnClick += new System.EventHandler(this.ucBtnExt8_BtnClick);
             // 
             // label45
             // 
@@ -3009,11 +3016,9 @@
             this.Name = "Form3";
             this.Text = "基础设置";
             this.TopMost = true;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form3_FormClosing);
             this.tabControlExt1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
             this.panelEx4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -3021,6 +3026,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.panelEx3.ResumeLayout(false);
             this.panelEx3.PerformLayout();
             this.panelEx7.ResumeLayout(false);
@@ -3029,11 +3035,13 @@
             this.panelEx6.PerformLayout();
             this.panelEx5.ResumeLayout(false);
             this.panelEx5.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
             this.panelEx2.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
             this.panelEx1.ResumeLayout(false);
             this.panelEx1.PerformLayout();
             this.ResumeLayout(false);

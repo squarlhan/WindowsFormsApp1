@@ -127,6 +127,7 @@
             this.ucBtnExt7.TabStop = false;
             this.ucBtnExt7.TipsColor = System.Drawing.Color.Red;
             this.ucBtnExt7.TipsText = "";
+            this.ucBtnExt7.BtnClick += new System.EventHandler(this.ucBtnExt7_BtnClick);
             // 
             // ucBtnExt8
             // 
@@ -153,6 +154,7 @@
             this.ucBtnExt8.TabStop = false;
             this.ucBtnExt8.TipsColor = System.Drawing.Color.Red;
             this.ucBtnExt8.TipsText = "";
+            this.ucBtnExt8.BtnClick += new System.EventHandler(this.ucBtnExt8_BtnClick);
             // 
             // groupBox2
             // 
@@ -830,6 +832,7 @@
             this.ucBtnExt1.TabStop = false;
             this.ucBtnExt1.TipsColor = System.Drawing.Color.Red;
             this.ucBtnExt1.TipsText = "";
+            this.ucBtnExt1.BtnClick += new System.EventHandler(this.ucBtnExt1_BtnClick);
             // 
             // ucBtnExt2
             // 
@@ -856,6 +859,7 @@
             this.ucBtnExt2.TabStop = false;
             this.ucBtnExt2.TipsColor = System.Drawing.Color.Red;
             this.ucBtnExt2.TipsText = "";
+            this.ucBtnExt2.BtnClick += new System.EventHandler(this.ucBtnExt2_BtnClick);
             // 
             // ucTextBoxEx7
             // 

@@ -15,6 +15,7 @@ using MySql.Data.MySqlClient;
 using DBTestCs;
 using LiveCharts;
 using LiveCharts.Wpf;
+using HZH_Controls.Forms;
 
 namespace WindowsFormsApp1
 {
@@ -30,6 +31,8 @@ namespace WindowsFormsApp1
         static int JianGe = 0;//如果到10秒，则画一条线
         const int ConstJianGe = 300;
         private float X, Y;
+
+        Form3 form3 = null;//form3窗体
 
         public Form1()
         {
@@ -149,8 +152,16 @@ namespace WindowsFormsApp1
 
         private void ucBtnExt1_BtnClick(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
-            form3.ShowDialog();
+            if (form3 == null)
+            {
+                form3 = new Form3();
+                form3.ShowDialog();
+            }
+            else
+            {
+                form3.Show();
+            }
+            
         }
 
         private void textBoxEx1_DoubleClick(object sender, EventArgs e)
@@ -292,9 +303,9 @@ namespace WindowsFormsApp1
             else
             {
                 //this.timer3.Start();
-               this.timer3.Enabled = true;
+                this.timer3.Enabled = true;
                 RuKouLiuLiangLeiJi = 0;//入口流量累积值
-               ChuKouLiuLiangLeiJi = 0;//出口流量累积值
+                ChuKouLiuLiangLeiJi = 0;//出口流量累积值
                 flag = false;
 
             }
@@ -307,7 +318,7 @@ namespace WindowsFormsApp1
 
         private void ucSwitch1_CheckedChanged_1(object sender, EventArgs e)
         {
-
+            
         }
 
         private void timer3_Tick(object sender, EventArgs e)
@@ -537,8 +548,28 @@ namespace WindowsFormsApp1
 
         private void Form1_DpiChanged(object sender, DpiChangedEventArgs e)
         {
-           /// Hello hello = new Hello();
-            //hello.ShowDialog();
+            Hello hello = new Hello();
+            hello.ShowDialog();
+        }
+
+
+        bool auto_flag = true;
+        private void ucSwitch2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ucSwitch1.SwitchType == HZH_Controls.Controls.SwitchType.Ellipse)
+            {
+                auto_flag = !auto_flag;
+                if (auto_flag)
+                {
+                    u.SetValue(15, 0);
+                }
+                else 
+                {
+                    u.SetValue(15, 1);
+                }
+                
+            }
+            
         }
 
         private void ucBtnExt5_BtnClick(object sender, EventArgs e)
@@ -568,6 +599,113 @@ namespace WindowsFormsApp1
                 }
             }
             
+        }
+
+        //点击手动控制，提交数据
+        private void ucBtnExt4_BtnClick(object sender, EventArgs e)
+        {
+            submit();
+            FrmDialog.ShowDialog(this, "数据库更新成功", "输入提示");
+        }
+
+        void submit() {
+            //上
+            if (ucNumTextBox3.Num != 0) 
+            {
+                double value = (double)ucNumTextBox3.Num;
+                u.SetValue(4, value);
+            }
+            if (ucNumTextBox9.Num != 1)
+            {
+                double value = (double)ucNumTextBox9.Num;
+                u.SetValue(10, value);
+            }
+
+            //中
+            if (ucNumTextBox1.Num != 1)
+            {
+                double value = (double)ucNumTextBox1.Num;
+                u.SetValue(2, value);
+            }
+            if (ucNumTextBox2.Num != 1)
+            {
+                double value = (double)ucNumTextBox2.Num;
+                u.SetValue(1, value);
+            }
+            //13
+            if (ucNumTextBox6.Num != 1)
+            {
+                double value = (double)ucNumTextBox6.Num;
+                u.SetValue(8, value);
+            }
+            if (ucNumTextBox8.Num != 1)
+            {
+                double value = (double)ucNumTextBox8.Num;
+                u.SetValue(9, value);
+            }
+            if (ucNumTextBox10.Num != 1)
+            {
+                double value = (double)ucNumTextBox10.Num;
+                u.SetValue(11, value);
+            }
+            //31
+            if (ucNumTextBox4.Num != 1)
+            {
+                double value = (double)ucNumTextBox4.Num;
+                u.SetValue(5, value);
+            }
+            if (ucNumTextBox5.Num != 1)
+            {
+                double value = (double)ucNumTextBox5.Num;
+                u.SetValue(7, value);
+            }
+
+            //下
+            if (ucNumTextBox14.Num != 1)
+            {
+                double value = (double)ucNumTextBox14.Num;
+                u.SetValue(12, value);
+            }
+            if (ucNumTextBox13.Num != 1)
+            {
+                double value = (double)ucNumTextBox13.Num;
+                u.SetValue(13, value);
+            }
+            if (ucNumTextBox12.Num != 1)
+            {
+                double value = (double)ucNumTextBox12.Num;
+                u.SetValue(14, value);
+            }
+
+            try 
+            {
+                if (ucTextBoxEx2.InputText.Length != 0)
+                {
+                    double value = double.Parse(ucTextBoxEx2.InputText);
+                    if (value != 0) 
+                    {
+                        u.SetValue(3, value);
+                    }
+                }
+            } 
+            catch (Exception ex) 
+            {
+                FrmDialog.ShowDialog(this, "存在非法输入\n" + ex.Message, "输入提示");
+            }
+
+            if (ucCombox1.SelectedText.Equals("泥浆泵1")) 
+            {
+                u.SetValue(6, 1.0);
+            }
+            else if(ucCombox1.SelectedText.Equals("泥浆泵2"))
+            {
+                u.SetValue(6, 2.0);
+            }
+            else if (ucCombox1.SelectedText.Equals("泥浆泵3"))
+            {
+                u.SetValue(6, 3.0);
+            }
+
         }
     }
 }

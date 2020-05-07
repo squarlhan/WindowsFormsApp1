@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1.csproj", "{BE26B334-0AD8-48C9-B719-37D88DA3F4BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KEPTest", ".\KEPTest\KEPTest.csproj", "{C914494D-692D-45A4-80D7-1E2941DB6BC1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KEPTest", "KEPTest\KEPTest.csproj", "{C914494D-692D-45A4-80D7-1E2941DB6BC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
